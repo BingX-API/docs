@@ -1,5 +1,5 @@
-# docs
-BingX API Docs
+
+# BingX API Docs
 
 [Perpetual Swap API Reference](https://bingx-exchange.github.io/docs/swap/) 
 
