@@ -1,0 +1,2 @@
+# docs
+BingX API Docs
