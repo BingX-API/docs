@@ -1,8 +1,8 @@
 
 # BingX API Docs
 
-[Perpetual Swap API Reference](https://bingx-exchange.github.io/docs/swap/) 
+[Perpetual Swap API Reference](https://bingx-api.github.io/docs/swap/) 
 
-[Standard Contract API Reference](https://bingx-exchange.github.io/docs/standard/)    
+[Standard Contract API Reference](https://bingx-api.github.io/docs/standard/)    
 
-[Spot API Reference](https://bingx-exchange.github.io/docs/spot/) 
+[Spot API Reference](https://bingx-api.github.io/docs/spot/) 
