@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Websocket 介绍 | BingX API Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="BingX交易所官方API文档,专业合约API文档,现货API文档">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7f806ca4.css" as="style"><link rel="preload" href="/docs/assets/js/app.50c26c97.js" as="script"><link rel="preload" href="/docs/assets/js/3.4674da7f.js" as="script"><link rel="preload" href="/docs/assets/js/4.d8be1d73.js" as="script"><link rel="preload" href="/docs/assets/js/66.1d90cde4.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.57ce178e.js"><link rel="prefetch" href="/docs/assets/js/11.57197624.js"><link rel="prefetch" href="/docs/assets/js/12.8bfffffe.js"><link rel="prefetch" href="/docs/assets/js/13.75250926.js"><link rel="prefetch" href="/docs/assets/js/14.440c35a5.js"><link rel="prefetch" href="/docs/assets/js/15.625b7454.js"><link rel="prefetch" href="/docs/assets/js/16.8cc91b97.js"><link rel="prefetch" href="/docs/assets/js/17.74da58b6.js"><link rel="prefetch" href="/docs/assets/js/18.7bc42381.js"><link rel="prefetch" href="/docs/assets/js/19.d79677a0.js"><link rel="prefetch" href="/docs/assets/js/20.be762b53.js"><link rel="prefetch" href="/docs/assets/js/21.43bb088f.js"><link rel="prefetch" href="/docs/assets/js/22.6f218616.js"><link rel="prefetch" href="/docs/assets/js/23.4f72778d.js"><link rel="prefetch" href="/docs/assets/js/24.1ec2b096.js"><link rel="prefetch" href="/docs/assets/js/25.104e1b98.js"><link rel="prefetch" href="/docs/assets/js/26.b1deeecb.js"><link rel="prefetch" href="/docs/assets/js/27.bc0fae4f.js"><link rel="prefetch" href="/docs/assets/js/28.39316ae0.js"><link rel="prefetch" href="/docs/assets/js/29.e2ac4532.js"><link rel="prefetch" href="/docs/assets/js/30.a386a4bb.js"><link rel="prefetch" href="/docs/assets/js/31.67a3c6c4.js"><link rel="prefetch" href="/docs/assets/js/32.38bed9d2.js"><link rel="prefetch" href="/docs/assets/js/33.ef54acbb.js"><link rel="prefetch" href="/docs/assets/js/34.d6264377.js"><link rel="prefetch" href="/docs/assets/js/35.9df323e8.js"><link rel="prefetch" href="/docs/assets/js/36.11d16e91.js"><link rel="prefetch" href="/docs/assets/js/37.74364fe6.js"><link rel="prefetch" href="/docs/assets/js/38.22df5707.js"><link rel="prefetch" href="/docs/assets/js/39.ed41d5f5.js"><link rel="prefetch" href="/docs/assets/js/40.df09a175.js"><link rel="prefetch" href="/docs/assets/js/41.3d722cfd.js"><link rel="prefetch" href="/docs/assets/js/42.e6498bc4.js"><link rel="prefetch" href="/docs/assets/js/43.8058cbcb.js"><link rel="prefetch" href="/docs/assets/js/44.2d27972b.js"><link rel="prefetch" href="/docs/assets/js/45.9d308104.js"><link rel="prefetch" href="/docs/assets/js/46.ee311158.js"><link rel="prefetch" href="/docs/assets/js/47.0b1547c0.js"><link rel="prefetch" href="/docs/assets/js/48.52086a01.js"><link rel="prefetch" href="/docs/assets/js/49.bc9199e0.js"><link rel="prefetch" href="/docs/assets/js/5.69699430.js"><link rel="prefetch" href="/docs/assets/js/50.e2064275.js"><link rel="prefetch" href="/docs/assets/js/51.fd33636b.js"><link rel="prefetch" href="/docs/assets/js/52.046a04ab.js"><link rel="prefetch" href="/docs/assets/js/53.7a563a56.js"><link rel="prefetch" href="/docs/assets/js/54.5217b343.js"><link rel="prefetch" href="/docs/assets/js/55.3b33d010.js"><link rel="prefetch" href="/docs/assets/js/56.c01ede69.js"><link rel="prefetch" href="/docs/assets/js/57.e704f967.js"><link rel="prefetch" href="/docs/assets/js/58.a4412698.js"><link rel="prefetch" href="/docs/assets/js/59.8195ef9d.js"><link rel="prefetch" href="/docs/assets/js/6.e3c66b57.js"><link rel="prefetch" href="/docs/assets/js/60.b123c332.js"><link rel="prefetch" href="/docs/assets/js/61.4457e838.js"><link rel="prefetch" href="/docs/assets/js/62.75ce18e6.js"><link rel="prefetch" href="/docs/assets/js/63.e97745bc.js"><link rel="prefetch" href="/docs/assets/js/64.f89c8b22.js"><link rel="prefetch" href="/docs/assets/js/65.4202369e.js"><link rel="prefetch" href="/docs/assets/js/67.cba93366.js"><link rel="prefetch" href="/docs/assets/js/68.77830980.js"><link rel="prefetch" href="/docs/assets/js/69.66ebe0e3.js"><link rel="prefetch" href="/docs/assets/js/7.e9ff2992.js"><link rel="prefetch" href="/docs/assets/js/70.3db5baea.js"><link rel="prefetch" href="/docs/assets/js/71.f0f80cb9.js"><link rel="prefetch" href="/docs/assets/js/72.2a46fb47.js"><link rel="prefetch" href="/docs/assets/js/73.92b5a65a.js"><link rel="prefetch" href="/docs/assets/js/74.9fa565f3.js"><link rel="prefetch" href="/docs/assets/js/75.536ec68c.js"><link rel="prefetch" href="/docs/assets/js/76.eecc2383.js"><link rel="prefetch" href="/docs/assets/js/77.3fafd034.js"><link rel="prefetch" href="/docs/assets/js/78.9f0d2e1f.js"><link rel="prefetch" href="/docs/assets/js/8.db263e85.js"><link rel="prefetch" href="/docs/assets/js/9.124ab448.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.8f04fa7f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7f806ca4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/zh/" class="home-link router-link-active"><img src="/docs/logo.svg" alt="BingX API Docs" class="logo"></a> <div class="navs"><nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/zh/swap/" class="nav-link">
+  USDT本位专业合约
+</a></div><div class="nav-item"><a href="/docs/zh/spot/" class="nav-link router-link-active">
+  现货
+</a></div></nav></div> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/spot/socket.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/spot/socket.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh-hk/spot/socket.html" class="nav-link">
+  繁体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/zh/swap/" class="nav-link">
+  USDT本位专业合约
+</a></div><div class="nav-item"><a href="/docs/zh/spot/" class="nav-link router-link-active">
+  现货
+</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>现货API文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/spot/basic-information.html" class="sidebar-link">基础信息</a></li><li><a href="/docs/zh/spot/authentication.html" class="sidebar-link">签名认证</a></li><li><a href="/docs/zh/spot/trade-interface.html" class="sidebar-link">交易接口</a></li><li><a href="/docs/zh/spot/market-interface.html" class="sidebar-link">行情接口</a></li><li><a href="/docs/zh/spot/user-interface.html" class="sidebar-link">用户划转和充值和提币接口</a></li><li><a href="/docs/zh/spot/other-interface.html" class="sidebar-link">其他接口</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>现货Socket文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/spot/socket.html" aria-current="page" class="active sidebar-link">Websocket 介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/spot/socket.html#接入方式" class="sidebar-link">接入方式</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/socket.html#数据压缩" class="sidebar-link">数据压缩</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/socket.html#心跳信息" class="sidebar-link">心跳信息</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/socket.html#订阅方式" class="sidebar-link">订阅方式</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/socket.html#取消订阅" class="sidebar-link">取消订阅</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/socket.html#symbol说明" class="sidebar-link">symbol说明</a></li></ul></li><li><a href="/docs/zh/spot/socket-market.html" class="sidebar-link">Websocket 行情推送</a></li><li><a href="/docs/zh/spot/socket-account.html" class="sidebar-link">Websocket 账户信息推送</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="websocket-介绍"><a href="#websocket-介绍" class="header-anchor">#</a> Websocket 介绍</h1> <h2 id="接入方式"><a href="#接入方式" class="header-anchor">#</a> 接入方式</h2> <p>行情Websocket的接入URL：<code>wss://open-api-ws.bingx.com/market</code></p> <h2 id="数据压缩"><a href="#数据压缩" class="header-anchor">#</a> 数据压缩</h2> <p>WebSocket 行情接口返回的所有数据都进行了 GZIP 压缩，需要 client 在收到数据之后解压。</p> <h2 id="心跳信息"><a href="#心跳信息" class="header-anchor">#</a> 心跳信息</h2> <p>当用户的Websocket客户端连接到Bingx Websocket服务器后，服务器会定期（当前设为5秒）向其发送心跳字符串Ping，</p> <p>当用户的Websocket客户端接收到此心跳消息后，应返回字符串Pong消息</p> <h2 id="订阅方式"><a href="#订阅方式" class="header-anchor">#</a> 订阅方式</h2> <p>成功建立与Websocket服务器的连接后，Websocket客户端发送如下请求以订阅特定主题：</p> <p>{
+&quot;id&quot;: &quot;id1&quot;,
+&quot;reqType&quot;: &quot;sub&quot;,
+&quot;dataType&quot;: &quot;data to sub&quot;
+}</p> <p>成功订阅后，Websocket客户端将收到确认：</p> <p>{
+&quot;id&quot;: &quot;id1&quot;,
+&quot;code&quot;: 0,
+&quot;msg&quot;: &quot;&quot;
+}
+之后, 一旦所订阅的数据有更新，Websocket客户端将收到服务器推送的更新消息</p> <h2 id="取消订阅"><a href="#取消订阅" class="header-anchor">#</a> 取消订阅</h2> <p>取消订阅的格式如下：</p> <p>{
+&quot;id&quot;: &quot;id1&quot;,
+&quot;reqType&quot;: &quot;unsub&quot;,
+&quot;dataType&quot;: &quot;data to unsub&quot;
+}</p> <p>取消订阅成功确认：</p> <p>{
+&quot;id&quot;: &quot;id1&quot;,
+&quot;code&quot;: 0,
+&quot;msg&quot;: &quot;&quot;
+}</p> <h2 id="symbol说明"><a href="#symbol说明" class="header-anchor">#</a> symbol说明</h2> <p>symbol必须全大写</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022/4/22 下午12:58:16</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/zh/spot/other-interface.html" class="prev">
+        其他接口
+      </a></span> <span class="next"><a href="/docs/zh/spot/socket-market.html">
+        Websocket 行情推送
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.50c26c97.js" defer></script><script src="/docs/assets/js/3.4674da7f.js" defer></script><script src="/docs/assets/js/4.d8be1d73.js" defer></script><script src="/docs/assets/js/66.1d90cde4.js" defer></script>
+  </body>
+</html>

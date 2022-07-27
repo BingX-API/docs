@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>用戶劃轉和充值和提幣介面 | BingX API Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="BingX交易所官方API文档,专业合约API文档,现货API文档">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7f806ca4.css" as="style"><link rel="preload" href="/docs/assets/js/app.50c26c97.js" as="script"><link rel="preload" href="/docs/assets/js/3.4674da7f.js" as="script"><link rel="preload" href="/docs/assets/js/4.d8be1d73.js" as="script"><link rel="preload" href="/docs/assets/js/47.0b1547c0.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.57ce178e.js"><link rel="prefetch" href="/docs/assets/js/11.57197624.js"><link rel="prefetch" href="/docs/assets/js/12.8bfffffe.js"><link rel="prefetch" href="/docs/assets/js/13.75250926.js"><link rel="prefetch" href="/docs/assets/js/14.440c35a5.js"><link rel="prefetch" href="/docs/assets/js/15.625b7454.js"><link rel="prefetch" href="/docs/assets/js/16.8cc91b97.js"><link rel="prefetch" href="/docs/assets/js/17.74da58b6.js"><link rel="prefetch" href="/docs/assets/js/18.7bc42381.js"><link rel="prefetch" href="/docs/assets/js/19.d79677a0.js"><link rel="prefetch" href="/docs/assets/js/20.be762b53.js"><link rel="prefetch" href="/docs/assets/js/21.43bb088f.js"><link rel="prefetch" href="/docs/assets/js/22.6f218616.js"><link rel="prefetch" href="/docs/assets/js/23.4f72778d.js"><link rel="prefetch" href="/docs/assets/js/24.1ec2b096.js"><link rel="prefetch" href="/docs/assets/js/25.104e1b98.js"><link rel="prefetch" href="/docs/assets/js/26.b1deeecb.js"><link rel="prefetch" href="/docs/assets/js/27.bc0fae4f.js"><link rel="prefetch" href="/docs/assets/js/28.39316ae0.js"><link rel="prefetch" href="/docs/assets/js/29.e2ac4532.js"><link rel="prefetch" href="/docs/assets/js/30.a386a4bb.js"><link rel="prefetch" href="/docs/assets/js/31.67a3c6c4.js"><link rel="prefetch" href="/docs/assets/js/32.38bed9d2.js"><link rel="prefetch" href="/docs/assets/js/33.ef54acbb.js"><link rel="prefetch" href="/docs/assets/js/34.d6264377.js"><link rel="prefetch" href="/docs/assets/js/35.9df323e8.js"><link rel="prefetch" href="/docs/assets/js/36.11d16e91.js"><link rel="prefetch" href="/docs/assets/js/37.74364fe6.js"><link rel="prefetch" href="/docs/assets/js/38.22df5707.js"><link rel="prefetch" href="/docs/assets/js/39.ed41d5f5.js"><link rel="prefetch" href="/docs/assets/js/40.df09a175.js"><link rel="prefetch" href="/docs/assets/js/41.3d722cfd.js"><link rel="prefetch" href="/docs/assets/js/42.e6498bc4.js"><link rel="prefetch" href="/docs/assets/js/43.8058cbcb.js"><link rel="prefetch" href="/docs/assets/js/44.2d27972b.js"><link rel="prefetch" href="/docs/assets/js/45.9d308104.js"><link rel="prefetch" href="/docs/assets/js/46.ee311158.js"><link rel="prefetch" href="/docs/assets/js/48.52086a01.js"><link rel="prefetch" href="/docs/assets/js/49.bc9199e0.js"><link rel="prefetch" href="/docs/assets/js/5.69699430.js"><link rel="prefetch" href="/docs/assets/js/50.e2064275.js"><link rel="prefetch" href="/docs/assets/js/51.fd33636b.js"><link rel="prefetch" href="/docs/assets/js/52.046a04ab.js"><link rel="prefetch" href="/docs/assets/js/53.7a563a56.js"><link rel="prefetch" href="/docs/assets/js/54.5217b343.js"><link rel="prefetch" href="/docs/assets/js/55.3b33d010.js"><link rel="prefetch" href="/docs/assets/js/56.c01ede69.js"><link rel="prefetch" href="/docs/assets/js/57.e704f967.js"><link rel="prefetch" href="/docs/assets/js/58.a4412698.js"><link rel="prefetch" href="/docs/assets/js/59.8195ef9d.js"><link rel="prefetch" href="/docs/assets/js/6.e3c66b57.js"><link rel="prefetch" href="/docs/assets/js/60.b123c332.js"><link rel="prefetch" href="/docs/assets/js/61.4457e838.js"><link rel="prefetch" href="/docs/assets/js/62.75ce18e6.js"><link rel="prefetch" href="/docs/assets/js/63.e97745bc.js"><link rel="prefetch" href="/docs/assets/js/64.f89c8b22.js"><link rel="prefetch" href="/docs/assets/js/65.4202369e.js"><link rel="prefetch" href="/docs/assets/js/66.1d90cde4.js"><link rel="prefetch" href="/docs/assets/js/67.cba93366.js"><link rel="prefetch" href="/docs/assets/js/68.77830980.js"><link rel="prefetch" href="/docs/assets/js/69.66ebe0e3.js"><link rel="prefetch" href="/docs/assets/js/7.e9ff2992.js"><link rel="prefetch" href="/docs/assets/js/70.3db5baea.js"><link rel="prefetch" href="/docs/assets/js/71.f0f80cb9.js"><link rel="prefetch" href="/docs/assets/js/72.2a46fb47.js"><link rel="prefetch" href="/docs/assets/js/73.92b5a65a.js"><link rel="prefetch" href="/docs/assets/js/74.9fa565f3.js"><link rel="prefetch" href="/docs/assets/js/75.536ec68c.js"><link rel="prefetch" href="/docs/assets/js/76.eecc2383.js"><link rel="prefetch" href="/docs/assets/js/77.3fafd034.js"><link rel="prefetch" href="/docs/assets/js/78.9f0d2e1f.js"><link rel="prefetch" href="/docs/assets/js/8.db263e85.js"><link rel="prefetch" href="/docs/assets/js/9.124ab448.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.8f04fa7f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7f806ca4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/zh-hk/" class="home-link router-link-active"><img src="/docs/logo.svg" alt="BingX API Docs" class="logo"></a> <div class="navs"><nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/zh-hk/swap/" class="nav-link">
+  USDT本位專業合約
+</a></div><div class="nav-item"><a href="/docs/zh-hk/spot/" class="nav-link router-link-active">
+  現貨
+</a></div></nav></div> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/spot/user-interface.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/spot/user-interface.html" class="nav-link">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh-hk/spot/user-interface.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  繁体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/zh-hk/swap/" class="nav-link">
+  USDT本位專業合約
+</a></div><div class="nav-item"><a href="/docs/zh-hk/spot/" class="nav-link router-link-active">
+  現貨
+</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>現貨API文檔</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh-hk/spot/basic-information.html" class="sidebar-link">基礎信息</a></li><li><a href="/docs/zh-hk/spot/authentication.html" class="sidebar-link">簽名認證</a></li><li><a href="/docs/zh-hk/spot/trade-interface.html" class="sidebar-link">交易介面</a></li><li><a href="/docs/zh-hk/spot/market-interface.html" class="sidebar-link">行情介面</a></li><li><a href="/docs/zh-hk/spot/user-interface.html" aria-current="page" class="active sidebar-link">用戶劃轉和充值和提幣介面</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh-hk/spot/user-interface.html#用戶萬向劃轉" class="sidebar-link">用戶萬向劃轉</a></li><li class="sidebar-sub-header"><a href="/docs/zh-hk/spot/user-interface.html#查詢用戶萬向劃轉歷史" class="sidebar-link">查詢用戶萬向劃轉歷史</a></li><li class="sidebar-sub-header"><a href="/docs/zh-hk/spot/user-interface.html#獲取充值歷史-支持多網路" class="sidebar-link">獲取充值歷史(支持多網路)</a></li><li class="sidebar-sub-header"><a href="/docs/zh-hk/spot/user-interface.html#獲取提幣歷史-支持多網路" class="sidebar-link">獲取提幣歷史(支持多網路)</a></li></ul></li><li><a href="/docs/zh-hk/spot/other-interface.html" class="sidebar-link">其他介面</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>現貨Socket文檔</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh-hk/spot/socket.html" class="sidebar-link">Websocket 介紹</a></li><li><a href="/docs/zh-hk/spot/socket-market.html" class="sidebar-link">Websocket 行情推送</a></li><li><a href="/docs/zh-hk/spot/socket-account.html" class="sidebar-link">Websocket 賬戶信息推送</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="用戶劃轉和充值和提幣介面"><a href="#用戶劃轉和充值和提幣介面" class="header-anchor">#</a> 用戶劃轉和充值和提幣介面</h1> <h2 id="用戶萬向劃轉"><a href="#用戶萬向劃轉" class="header-anchor">#</a> 用戶萬向劃轉</h2> <p><strong>介面</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    POST /openApi/api/v3/asset/transfer
+</code></pre></div><p><strong>參數</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>是否必填</th> <th>備註</th></tr></thead> <tbody><tr><td>type</td> <td>ENUM</td> <td>是</td> <td>劃轉類型</td></tr> <tr><td>asset</td> <td>STRING</td> <td>是</td> <td>幣的名稱 例如USDT</td></tr> <tr><td>amount</td> <td>DECIMAL</td> <td>是</td> <td>交易金額</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>否</td> <td>執行窗口時間，不能大於 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>是</td> <td>當前時間戳  例如1658748648396</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>   
+      目前支持的type劃轉類型:
+     
+      FUND_SFUTURES，資金賬戶-&gt;標準合約
+     
+      SFUTURES_FUND，標準合約-&gt;資金賬戶
+     
+      FUND_PFUTURES，資金賬戶-&gt;專業合約
+     
+      PFUTURES_FUND，專業合約-&gt;資金賬戶
+     
+      SFUTURES_PFUTURES，標準合約-&gt;專業合約
+     
+      PFUTURES_SFUTURES，專業合約-&gt;標準合約
+   
+</code></pre></div><p><strong>響應</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>tranId</td> <td>LONG</td> <td>交易ID</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;tranId&quot;:13526853623
+}
+</code></pre></div><h2 id="查詢用戶萬向劃轉歷史"><a href="#查詢用戶萬向劃轉歷史" class="header-anchor">#</a> 查詢用戶萬向劃轉歷史</h2> <p><strong>介面</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/api/v3/asset/transfer
+</code></pre></div><p><strong>參數</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>是否必填</th> <th>備註</th></tr></thead> <tbody><tr><td>type</td> <td>ENUM</td> <td>是</td> <td>劃轉類型</td></tr> <tr><td>startTime</td> <td>LONG</td> <td>否</td> <td>開始時間 1658748648396</td></tr> <tr><td>endTime</td> <td>LONG</td> <td>否</td> <td>結束時間   1658748648396</td></tr> <tr><td>current</td> <td>Int</td> <td>否</td> <td>當前頁 默認1</td></tr> <tr><td>size</td> <td>Int</td> <td>否</td> <td>頁數量大小 默認10 不能超過100</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>否</td> <td>執行窗口時間，不能大於 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>是</td> <td>當前時間戳 1658748648396</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>   
+      目前支持的type劃轉類型:
+     
+      FUND_SFUTURES，資金賬戶-&gt;標準合約
+     
+      SFUTURES_FUND，標準合約-&gt;資金賬戶
+     
+      FUND_PFUTURES，資金賬戶-&gt;專業合約
+     
+      PFUTURES_FUND，專業合約-&gt;資金賬戶
+     
+      SFUTURES_PFUTURES，標準合約-&gt;專業合約
+     
+      PFUTURES_SFUTURES，專業合約-&gt;標準合約
+   
+</code></pre></div><p><strong>響應</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>total</td> <td>LONG</td> <td>總數</td></tr> <tr><td>rows</td> <td>Array</td> <td>數據Array</td></tr> <tr><td>asset</td> <td>String</td> <td>幣的名稱</td></tr> <tr><td>amount</td> <td>DECIMAL</td> <td>幣的金額</td></tr> <tr><td>type</td> <td>ENUM</td> <td>劃轉類型</td></tr> <tr><td>status</td> <td>String</td> <td>CONFIRMED</td></tr> <tr><td>tranId</td> <td>LONG</td> <td>交易id</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>劃轉的時間戳</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;total&quot;:3,
+    &quot;rows&quot;:[
+        {
+            &quot;asset&quot;:&quot;USDT&quot;,
+            &quot;amount&quot;:&quot;-100.00000000000000000000&quot;,
+            &quot;type&quot;:&quot;FUND_SFUTURES&quot;,
+            &quot;status&quot;:&quot;CONFIRMED&quot;,
+            &quot;tranId&quot;:1067594500957016069,
+            &quot;timestamp&quot;:1658388859000
+        },
+        {
+            &quot;asset&quot;:&quot;USDT&quot;,
+            &quot;amount&quot;:&quot;-33.00000000000000000000&quot;,
+            &quot;type&quot;:&quot;FUND_SFUTURES&quot;,
+            &quot;status&quot;:&quot;CONFIRMED&quot;,
+            &quot;tranId&quot;:1069064111112065025,
+            &quot;timestamp&quot;:1658739241000
+        },
+        {
+            &quot;asset&quot;:&quot;USDT&quot;,
+            &quot;amount&quot;:&quot;-100.00000000000000000000&quot;,
+            &quot;type&quot;:&quot;FUND_SFUTURES&quot;,
+            &quot;status&quot;:&quot;CONFIRMED&quot;,
+            &quot;tranId&quot;:1069099446076444674,
+            &quot;timestamp&quot;:1658747666000
+        }
+    ]
+}
+</code></pre></div><h2 id="獲取充值歷史-支持多網路"><a href="#獲取充值歷史-支持多網路" class="header-anchor">#</a> 獲取充值歷史(支持多網路)</h2> <p><strong>介面</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/api/v3/capital/deposit/hisrec
+</code></pre></div><p><strong>參數</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>是否必填</th> <th>備註</th></tr></thead> <tbody><tr><td>coin</td> <td>String</td> <td>否</td> <td>幣的名稱</td></tr> <tr><td>status</td> <td>Int</td> <td>否</td> <td>狀態(0:pending,6: credited but cannot withdraw, 1:success)</td></tr> <tr><td>startTime</td> <td>LONG</td> <td>否</td> <td>開始時間   1658748648396</td></tr> <tr><td>endTime</td> <td>LONG</td> <td>否</td> <td>結束時間   1658748648396</td></tr> <tr><td>offset</td> <td>Int</td> <td>否</td> <td>偏移 默認0</td></tr> <tr><td>limit</td> <td>Int</td> <td>否</td> <td>頁數量大小 默認1000 不能超過1000</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>否</td> <td>執行窗口時間，不能大於 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>是</td> <td>當前時間戳 1658748648396</td></tr></tbody></table> <p><strong>響應</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>amount</td> <td>DECIMAL</td> <td>充值金額</td></tr> <tr><td>coin</td> <td>String</td> <td>幣名稱</td></tr> <tr><td>network</td> <td>String</td> <td>充值網路</td></tr> <tr><td>status</td> <td>Int</td> <td>狀態 狀態 0-已確認-10-待確認(審核中) 20-已申請區塊 30已審核通過 40審核不通過 50已匯出 60充值初步確認(最終確認變為0) 70審核不通過已退回資產</td></tr> <tr><td>address</td> <td>String</td> <td>充值地址</td></tr> <tr><td>addressTag</td> <td>String</td> <td>備註</td></tr> <tr><td>txId</td> <td>LONG</td> <td>交易id</td></tr> <tr><td>insertTime</td> <td>LONG</td> <td>交易時間</td></tr> <tr><td>transferType</td> <td>LONG</td> <td>交易類型0=充值</td></tr> <tr><td>unlockConfirm</td> <td>LONG</td> <td>解鎖需要的網路確認次數</td></tr> <tr><td>confirmTimes</td> <td>LONG</td> <td>網路確認次數</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>[
+    {
+        &quot;amount&quot;:&quot;0.00999800&quot;,
+        &quot;coin&quot;:&quot;PAXG&quot;,
+        &quot;network&quot;:&quot;ETH&quot;,
+        &quot;status&quot;:1,
+        &quot;address&quot;:&quot;0x788cabe9236ce061e5a892e1a59395a81fc8d62c&quot;,
+        &quot;addressTag&quot;:&quot;&quot;,
+        &quot;txId&quot;:&quot;0xaad4654a3234aa6118af9b4b335f5ae81c360b2394721c019b5d1e75328b09f3&quot;,
+        &quot;insertTime&quot;:1599621997000,
+        &quot;transferType&quot;:0,
+        &quot;unlockConfirm&quot;:&quot;12/12&quot;, // 解鎖需要的網路確認次數
+        &quot;confirmTimes&quot;:&quot;12/12&quot;
+    },
+    {
+        &quot;amount&quot;:&quot;0.50000000&quot;,
+        &quot;coin&quot;:&quot;IOTA&quot;,
+        &quot;network&quot;:&quot;IOTA&quot;,
+        &quot;status&quot;:1,
+        &quot;address&quot;:&quot;SIZ9VLMHWATXKV99LH99CIGFJFUMLEHGWVZVNNZXRJJVWBPHYWPPBOSDORZ9EQSHCZAMPVAPGFYQAUUV9DROOXJLNW&quot;,
+        &quot;addressTag&quot;:&quot;&quot;,
+        &quot;txId&quot;:&quot;ESBFVQUTPIWQNJSPXFNHNYHSQNTGKRVKPRABQWTAXCDWOAKDKYWPTVG9BGXNVNKTLEJGESAVXIKIZ9999&quot;,
+        &quot;insertTime&quot;:1599620082000,
+        &quot;transferType&quot;:0,
+        &quot;unlockConfirm&quot;:&quot;1/12&quot;,
+        &quot;confirmTimes&quot;:&quot;1/1&quot;
+    }
+]
+</code></pre></div><h2 id="獲取提幣歷史-支持多網路"><a href="#獲取提幣歷史-支持多網路" class="header-anchor">#</a> 獲取提幣歷史(支持多網路)</h2> <p><strong>介面</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/api/v3/capital/withdraw/history
+</code></pre></div><p><strong>參數</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>是否必填</th> <th>備註</th></tr></thead> <tbody><tr><td>coin</td> <td>String</td> <td>否</td> <td>幣的名稱</td></tr> <tr><td>withdrawOrderId</td> <td>String</td> <td>否</td> <td>自定義ID, 如果沒有則不返回該欄位</td></tr> <tr><td>status</td> <td>Int</td> <td>否</td> <td>狀態 (0:已發送確認Email, 2:等待確認 3:被拒絕 4:處理中 5:提現交易失敗 6 提現完成)</td></tr> <tr><td>startTime</td> <td>LONG</td> <td>否</td> <td>開始時間   1658748648396</td></tr> <tr><td>endTime</td> <td>LONG</td> <td>否</td> <td>結束時間   1658748648396</td></tr> <tr><td>offset</td> <td>Int</td> <td>否</td> <td>偏移 默認0</td></tr> <tr><td>limit</td> <td>Int</td> <td>否</td> <td>頁數量大小 默認1000 不能超過1000</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>否</td> <td>執行窗口時間，不能大於 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>是</td> <td>當前時間戳 1658748648396</td></tr></tbody></table> <p><strong>響應</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>address</td> <td>String</td> <td>地址</td></tr> <tr><td>amount</td> <td>DECIMAL</td> <td>提現轉出金額</td></tr> <tr><td>applyTime</td> <td>Date</td> <td>充值時間</td></tr> <tr><td>coin</td> <td>String</td> <td>幣名稱</td></tr> <tr><td>id</td> <td>String</td> <td>該筆提現的id</td></tr> <tr><td>withdrawOrderId</td> <td>String</td> <td>自定義ID, 如果沒有則不返回該欄位</td></tr> <tr><td>network</td> <td>String</td> <td>提現網路</td></tr> <tr><td>transferType</td> <td>Int</td> <td>交易類型1=提現</td></tr> <tr><td>status</td> <td>Int</td> <td>狀態 狀態 0-已確認-10-待確認(審核中) 20-已申請區塊 30已審核通過 40審核不通過 50已匯出 60充值初步確認(最終確認變為0) 70審核不通過已退回資產</td></tr> <tr><td>transactionFee</td> <td>String</td> <td>手續費</td></tr> <tr><td>confirmNo</td> <td>Int</td> <td>提現確認次數</td></tr> <tr><td>info</td> <td>String</td> <td>提幣失敗原因</td></tr> <tr><td>txId</td> <td>String</td> <td>提現交易id</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>[
+    {
+        &quot;address&quot;: &quot;0x94df8b352de7f46f64b01d3666bf6e936e44ce60&quot;,
+        &quot;amount&quot;: &quot;8.91000000&quot;,   // 提現轉出金額
+        &quot;applyTime&quot;: &quot;2019-10-12 11:12:02&quot;,  
+        &quot;coin&quot;: &quot;USDT&quot;,
+        &quot;id&quot;: &quot;b6ae22b3aa844210a7041aee7589627c&quot;,  // 該筆提現的id
+        &quot;withdrawOrderId&quot;: &quot;WITHDRAWtest123&quot;, // 自定義ID, 如果沒有則不返回該欄位
+        &quot;network&quot;: &quot;ETH&quot;,
+        &quot;transferType&quot;: 0 
+        &quot;status&quot;: 6,
+        &quot;transactionFee&quot;: &quot;0.004&quot;, // 手續費
+        &quot;confirmNo&quot;:3,  // 提現確認數
+        &quot;info&quot;: &quot;The address is not valid. Please confirm with the recipient&quot;,  // 提幣失敗原因
+        &quot;txId&quot;: &quot;0xb5ef8c13b968a406cc62a93a8bd80f9e9a906ef1b3fcf20a2e48573c17659268&quot;   // 提現交易id
+    },
+    {
+        &quot;address&quot;: &quot;1FZdVHtiBqMrWdjPyRPULCUceZPJ2WLCsB&quot;,
+        &quot;amount&quot;: &quot;0.00150000&quot;,
+        &quot;applyTime&quot;: &quot;2019-09-24 12:43:45&quot;,
+        &quot;coin&quot;: &quot;BTC&quot;,
+        &quot;id&quot;: &quot;156ec387f49b41df8724fa744fa82719&quot;,
+        &quot;network&quot;: &quot;BTC&quot;,
+        &quot;transferType&quot;: 0, 
+        &quot;status&quot;: 6,
+        &quot;transactionFee&quot;: &quot;0.004&quot;,
+        &quot;confirmNo&quot;: 2,
+        &quot;info&quot;: &quot;&quot;,
+        &quot;txId&quot;: &quot;60fd9007ebfddc753455f95fafa808c4302c836e4d1eebc5a132c36c1d8ac354&quot;
+    }
+]
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">27/7/2022 上午11:04:42</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/zh-hk/spot/market-interface.html" class="prev">
+        行情介面
+      </a></span> <span class="next"><a href="/docs/zh-hk/spot/other-interface.html">
+        其他介面
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.50c26c97.js" defer></script><script src="/docs/assets/js/3.4674da7f.js" defer></script><script src="/docs/assets/js/4.d8be1d73.js" defer></script><script src="/docs/assets/js/47.0b1547c0.js" defer></script>
+  </body>
+</html>

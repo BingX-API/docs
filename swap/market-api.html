@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Market Interface | BingX API Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="BingX Official API Reference, Swap API Reference, Spot API Reference">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7f806ca4.css" as="style"><link rel="preload" href="/docs/assets/js/app.50c26c97.js" as="script"><link rel="preload" href="/docs/assets/js/3.4674da7f.js" as="script"><link rel="preload" href="/docs/assets/js/4.d8be1d73.js" as="script"><link rel="preload" href="/docs/assets/js/32.38bed9d2.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.57ce178e.js"><link rel="prefetch" href="/docs/assets/js/11.57197624.js"><link rel="prefetch" href="/docs/assets/js/12.8bfffffe.js"><link rel="prefetch" href="/docs/assets/js/13.75250926.js"><link rel="prefetch" href="/docs/assets/js/14.440c35a5.js"><link rel="prefetch" href="/docs/assets/js/15.625b7454.js"><link rel="prefetch" href="/docs/assets/js/16.8cc91b97.js"><link rel="prefetch" href="/docs/assets/js/17.74da58b6.js"><link rel="prefetch" href="/docs/assets/js/18.7bc42381.js"><link rel="prefetch" href="/docs/assets/js/19.d79677a0.js"><link rel="prefetch" href="/docs/assets/js/20.be762b53.js"><link rel="prefetch" href="/docs/assets/js/21.43bb088f.js"><link rel="prefetch" href="/docs/assets/js/22.6f218616.js"><link rel="prefetch" href="/docs/assets/js/23.4f72778d.js"><link rel="prefetch" href="/docs/assets/js/24.1ec2b096.js"><link rel="prefetch" href="/docs/assets/js/25.104e1b98.js"><link rel="prefetch" href="/docs/assets/js/26.b1deeecb.js"><link rel="prefetch" href="/docs/assets/js/27.bc0fae4f.js"><link rel="prefetch" href="/docs/assets/js/28.39316ae0.js"><link rel="prefetch" href="/docs/assets/js/29.e2ac4532.js"><link rel="prefetch" href="/docs/assets/js/30.a386a4bb.js"><link rel="prefetch" href="/docs/assets/js/31.67a3c6c4.js"><link rel="prefetch" href="/docs/assets/js/33.ef54acbb.js"><link rel="prefetch" href="/docs/assets/js/34.d6264377.js"><link rel="prefetch" href="/docs/assets/js/35.9df323e8.js"><link rel="prefetch" href="/docs/assets/js/36.11d16e91.js"><link rel="prefetch" href="/docs/assets/js/37.74364fe6.js"><link rel="prefetch" href="/docs/assets/js/38.22df5707.js"><link rel="prefetch" href="/docs/assets/js/39.ed41d5f5.js"><link rel="prefetch" href="/docs/assets/js/40.df09a175.js"><link rel="prefetch" href="/docs/assets/js/41.3d722cfd.js"><link rel="prefetch" href="/docs/assets/js/42.e6498bc4.js"><link rel="prefetch" href="/docs/assets/js/43.8058cbcb.js"><link rel="prefetch" href="/docs/assets/js/44.2d27972b.js"><link rel="prefetch" href="/docs/assets/js/45.9d308104.js"><link rel="prefetch" href="/docs/assets/js/46.ee311158.js"><link rel="prefetch" href="/docs/assets/js/47.0b1547c0.js"><link rel="prefetch" href="/docs/assets/js/48.52086a01.js"><link rel="prefetch" href="/docs/assets/js/49.bc9199e0.js"><link rel="prefetch" href="/docs/assets/js/5.69699430.js"><link rel="prefetch" href="/docs/assets/js/50.e2064275.js"><link rel="prefetch" href="/docs/assets/js/51.fd33636b.js"><link rel="prefetch" href="/docs/assets/js/52.046a04ab.js"><link rel="prefetch" href="/docs/assets/js/53.7a563a56.js"><link rel="prefetch" href="/docs/assets/js/54.5217b343.js"><link rel="prefetch" href="/docs/assets/js/55.3b33d010.js"><link rel="prefetch" href="/docs/assets/js/56.c01ede69.js"><link rel="prefetch" href="/docs/assets/js/57.e704f967.js"><link rel="prefetch" href="/docs/assets/js/58.a4412698.js"><link rel="prefetch" href="/docs/assets/js/59.8195ef9d.js"><link rel="prefetch" href="/docs/assets/js/6.e3c66b57.js"><link rel="prefetch" href="/docs/assets/js/60.b123c332.js"><link rel="prefetch" href="/docs/assets/js/61.4457e838.js"><link rel="prefetch" href="/docs/assets/js/62.75ce18e6.js"><link rel="prefetch" href="/docs/assets/js/63.e97745bc.js"><link rel="prefetch" href="/docs/assets/js/64.f89c8b22.js"><link rel="prefetch" href="/docs/assets/js/65.4202369e.js"><link rel="prefetch" href="/docs/assets/js/66.1d90cde4.js"><link rel="prefetch" href="/docs/assets/js/67.cba93366.js"><link rel="prefetch" href="/docs/assets/js/68.77830980.js"><link rel="prefetch" href="/docs/assets/js/69.66ebe0e3.js"><link rel="prefetch" href="/docs/assets/js/7.e9ff2992.js"><link rel="prefetch" href="/docs/assets/js/70.3db5baea.js"><link rel="prefetch" href="/docs/assets/js/71.f0f80cb9.js"><link rel="prefetch" href="/docs/assets/js/72.2a46fb47.js"><link rel="prefetch" href="/docs/assets/js/73.92b5a65a.js"><link rel="prefetch" href="/docs/assets/js/74.9fa565f3.js"><link rel="prefetch" href="/docs/assets/js/75.536ec68c.js"><link rel="prefetch" href="/docs/assets/js/76.eecc2383.js"><link rel="prefetch" href="/docs/assets/js/77.3fafd034.js"><link rel="prefetch" href="/docs/assets/js/78.9f0d2e1f.js"><link rel="prefetch" href="/docs/assets/js/8.db263e85.js"><link rel="prefetch" href="/docs/assets/js/9.124ab448.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.8f04fa7f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7f806ca4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/logo.svg" alt="BingX API Docs" class="logo"></a> <div class="navs"><nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/swap/" class="nav-link router-link-active">
+  Perpetual Swap API Reference
+</a></div><div class="nav-item"><a href="/docs/spot/" class="nav-link">
+  Spot
+</a></div><div class="nav-item"><a href="/docs/standard/" class="nav-link">
+  Standard Contract
+</a></div></nav></div> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/swap/market-api.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/swap/market-api.html" class="nav-link">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh-hk/swap/market-api.html" class="nav-link">
+  繁体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/swap/" class="nav-link router-link-active">
+  Perpetual Swap API Reference
+</a></div><div class="nav-item"><a href="/docs/spot/" class="nav-link">
+  Spot
+</a></div><div class="nav-item"><a href="/docs/standard/" class="nav-link">
+  Standard Contract
+</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Swap API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/swap/introduce.html" class="sidebar-link">Introduction</a></li><li><a href="/docs/swap/authentication.html" class="sidebar-link">Authentication</a></li><li><a href="/docs/swap/base-info.html" class="sidebar-link">Basic Information</a></li><li><a href="/docs/swap/market-api.html" aria-current="page" class="active sidebar-link">Market Interface</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_1-contract-information" class="sidebar-link">1. Contract Information</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_2-get-latest-price-of-a-trading-pair" class="sidebar-link">2. Get Latest Price of a Trading Pair</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_3-get-market-depth" class="sidebar-link">3. Get Market Depth</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_4-the-latest-trade-of-a-trading-pair" class="sidebar-link">4. The latest Trade of a Trading Pair</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_5-current-funding-rate" class="sidebar-link">5. Current Funding Rate</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_6-funding-rate-history" class="sidebar-link">6. Funding Rate History</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_7-get-k-line-data" class="sidebar-link">7. Get K-Line Data</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_8-k-line-data-history" class="sidebar-link">8. K-Line Data History</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_9-get-swap-open-positions" class="sidebar-link">9. Get Swap Open Positions</a></li><li class="sidebar-sub-header"><a href="/docs/swap/market-api.html#_10-get-ticker" class="sidebar-link">10. Get Ticker</a></li></ul></li><li><a href="/docs/swap/account-api.html" class="sidebar-link">Account Interface</a></li><li><a href="/docs/swap/trade-api.html" class="sidebar-link">Trade Interface</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Socket API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/swap/socket.html" class="sidebar-link">Introduction</a></li><li><a href="/docs/swap/socket-market.html" class="sidebar-link">Perpetual Swap Websocket Market Data</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="market-interface"><a href="#market-interface" class="header-anchor">#</a> Market Interface</h1> <h2 id="_1-contract-information"><a href="#_1-contract-information" class="header-anchor">#</a> 1. Contract Information</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>    # Request
+    GET api/v1/market/getAllContracts
+    
+    example： https://api-swap-rest.bingbon.pro/api/v1/market/getAllContracts   
+</code></pre></div><p><strong>Return Parameters</strong></p> <table><thead><tr><th>Field</th> <th style="text-align:center;">Description</th></tr></thead> <tbody><tr><td>code</td> <td style="text-align:center;">For error messages, 0 means normal</td></tr> <tr><td>msg</td> <td style="text-align:center;">Error message description</td></tr> <tr><td>contractId</td> <td style="text-align:center;">ContractId</td></tr> <tr><td>symbol</td> <td style="text-align:center;">Trading pair symbol, returned in the form of A_B</td></tr> <tr><td>name</td> <td style="text-align:center;">The name of the underlying index</td></tr> <tr><td>size</td> <td style="text-align:center;">Contract value, for example 0.0001 BTC</td></tr> <tr><td>volumePrecision</td> <td style="text-align:center;">The precision of trading volume</td></tr> <tr><td>pricePrecision</td> <td style="text-align:center;">The precision of price</td></tr> <tr><td>feeRate</td> <td style="text-align:center;">Trading fees</td></tr> <tr><td>tradeMinLimit</td> <td style="text-align:center;">Minimum trading unit</td></tr> <tr><td>currency</td> <td style="text-align:center;">Settlement currency</td></tr> <tr><td>asset</td> <td style="text-align:center;">Contract denomination asset</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code>	# Response
+	<span class="token punctuation">{</span>
+	    <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	    <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+	    <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	        <span class="token string">&quot;contractId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;100&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BTC-USDT&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BTC-USDT&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;size&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0001&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;volumePrecision&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;pricePrecision&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;feeRate&quot;</span><span class="token operator">:</span> <span class="token number">0.001</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;tradeMinLimit&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USDT&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;asset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BTC&quot;</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	        <span class="token string">&quot;contractId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;101&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ETH_USDT&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ETH-USDT&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;size&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.01&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;volumePrecision&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;pricePrecision&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;feeRate&quot;</span><span class="token operator">:</span> <span class="token number">0.001</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;tradeMinLimit&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USDT&quot;</span><span class="token punctuation">,</span>
+	        <span class="token string">&quot;asset&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ETH&quot;</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	    <span class="token operator">...</span>
+	<span class="token punctuation">}</span> 
+</code></pre></div><h2 id="_2-get-latest-price-of-a-trading-pair"><a href="#_2-get-latest-price-of-a-trading-pair" class="header-anchor">#</a> 2. Get Latest Price of a Trading Pair</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>  # Request
+  GET api/v1/market/getLatestPrice
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>tradePrice</td> <td>float64</td> <td>Trading Price</td></tr> <tr><td>indexPrice</td> <td>float64</td> <td>Index Price</td></tr> <tr><td>fairPrice</td> <td>float64</td> <td>Mark Price</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Response
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;tradePrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;50000.18&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;indexPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;50000.18&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;fairPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;50000.18&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-get-market-depth"><a href="#_3-get-market-depth" class="header-anchor">#</a> 3. Get Market Depth</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>    # Request
+    GET api/v1/market/getMarketDepth
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr> <tr><td>level</td> <td>String</td> <td>NO</td> <td>Number of levels</td> <td>If it is empty, it will return 5 levels of data by default.</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>code</td> <td>Int64</td> <td>For error messages, 0 means normal, 1 means error</td></tr> <tr><td>msg</td> <td>String</td> <td>Error message description</td></tr> <tr><td>asks</td> <td>array</td> <td>Sell side depth</td></tr> <tr><td>bids</td> <td>array</td> <td>Buy side depth</td></tr> <tr><td>p</td> <td>float64</td> <td>price</td></tr> <tr><td>v</td> <td>float64</td> <td>volume</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code>    # Response
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;asks&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5319.94</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">0.05483456</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5320.19</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.05734545</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5320.39</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.16307999</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5320.94</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">0.05483456</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5330.19</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.05734545</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5330.39</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.16307999</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;bids&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5319.93</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">0.05483456</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5318.19</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.05734545</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5317.39</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.16307999</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5316.94</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">0.05483456</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5315.19</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.05734545</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                <span class="token string">&quot;p&quot;</span><span class="token operator">:</span> <span class="token number">5314.39</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;v&quot;</span><span class="token operator">:</span> <span class="token number">1.16307999</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_4-the-latest-trade-of-a-trading-pair"><a href="#_4-the-latest-trade-of-a-trading-pair" class="header-anchor">#</a> 4. The latest Trade of a Trading Pair</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>  # Request
+  GET api/v1/market/getMarketTrades
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>time</td> <td>data</td> <td>Closing Time</td></tr> <tr><td>makerSide</td> <td>String</td> <td>Direction (Buy / Sell)</td></tr> <tr><td>price</td> <td>String</td> <td>Closing Price</td></tr> <tr><td>volume</td> <td>String</td> <td>Filled Amount</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code> # Response
+ <span class="token punctuation">{</span>
+     <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+         <span class="token string">&quot;trades&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+             <span class="token punctuation">{</span>
+                 <span class="token string">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-04-25T15:00:51.999Z&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;makerSide&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Buy&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;price&quot;</span><span class="token operator">:</span> <span class="token number">0.279563</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+             <span class="token punctuation">}</span><span class="token punctuation">,</span>
+             <span class="token punctuation">{</span>
+                 <span class="token string">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-04-25T15:00:51.000Z&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;makerSide&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sell&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;price&quot;</span><span class="token operator">:</span> <span class="token number">0.279563</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+             <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_5-current-funding-rate"><a href="#_5-current-funding-rate" class="header-anchor">#</a> 5. Current Funding Rate</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>	# Request
+	GET api/v1/market/getLatestFunding
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>fundingRate</td> <td>float64</td> <td>Current Funding Rate</td></tr> <tr><td>fairPrice</td> <td>float64</td> <td>Current Mark Price</td></tr> <tr><td>leftSeconds</td> <td>float64</td> <td>Time left for the next settlement, in seconds</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Response
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;fundingRate&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.3000&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;fairPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;182.90&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;leftSeconds&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1024&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-funding-rate-history"><a href="#_6-funding-rate-history" class="header-anchor">#</a> 6. Funding Rate History</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>  # Request
+  GET api/v1/market/getHistoryFunding
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>historyId</td> <td>String</td> <td>historyId</td></tr> <tr><td>fundingRate</td> <td>String</td> <td>Funding rate</td></tr> <tr><td>fairPrice</td> <td>String</td> <td>Mark Price</td></tr> <tr><td>interval</td> <td>String</td> <td>The funding rate settlement cycle, unit: hour</td></tr> <tr><td>time</td> <td>data</td> <td>Settlement Time</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code> # Response
+ <span class="token punctuation">{</span>
+     <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+         <span class="token string">&quot;fundings&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+             <span class="token punctuation">{</span>
+                 <span class="token string">&quot;historyId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;687&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ETH-USDT&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;fundingRate&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.3000&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;fairPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;182.73&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;interval&quot;</span><span class="token operator">:</span> <span class="token string">&quot;8&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2019-10-28T16:00:00.000Z&quot;</span>
+             <span class="token punctuation">}</span><span class="token punctuation">,</span>
+             <span class="token punctuation">{</span>
+                 <span class="token string">&quot;historyId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;686&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ETH-USDT&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;fundingRate&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.3000&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;fairPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;182.90&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;interval&quot;</span><span class="token operator">:</span> <span class="token string">&quot;8&quot;</span><span class="token punctuation">,</span>
+                 <span class="token string">&quot;time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2019-10-28T15:00:00.000Z&quot;</span>
+             <span class="token punctuation">}</span>
+         <span class="token punctuation">]</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span> 
+</code></pre></div><h2 id="_7-get-k-line-data"><a href="#_7-get-k-line-data" class="header-anchor">#</a> 7. Get K-Line Data</h2> <div class="language- extra-class"><pre><code>Get the latest Kline Data
+</code></pre></div><p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>  # Request
+  GET api/v1/market/getLatestKline
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr> <tr><td>klineType</td> <td>String</td> <td>YES</td> <td>K-Line Type</td> <td>The type of K-Line (minutes, hours, weeks etc.)</td></tr></tbody></table> <p><strong>Remarks</strong></p> <table><thead><tr><th>klineType</th> <th>Field Description</th></tr></thead> <tbody><tr><td>1</td> <td>1min Kline</td></tr> <tr><td>3</td> <td>3min Kline</td></tr> <tr><td>5</td> <td>5min Kline</td></tr> <tr><td>15</td> <td>15min Kline</td></tr> <tr><td>30</td> <td>30min Kline</td></tr> <tr><td>60</td> <td>1h Kline</td></tr> <tr><td>120</td> <td>2h Kline</td></tr> <tr><td>240</td> <td>4h Kline</td></tr> <tr><td>360</td> <td>6h Kline</td></tr> <tr><td>720</td> <td>12h Kline</td></tr> <tr><td>1D</td> <td>1D Kline</td></tr> <tr><td>1W</td> <td>1W Kline</td></tr> <tr><td>1M</td> <td>1M Kline</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th><strong>Parameters</strong></th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>open</td> <td>float64</td> <td>Open</td></tr> <tr><td>close</td> <td>float64</td> <td>Close</td></tr> <tr><td>high</td> <td>float64</td> <td>High</td></tr> <tr><td>low</td> <td>float64</td> <td>Low</td></tr> <tr><td>volume</td> <td>float64</td> <td>Volume</td></tr> <tr><td>ts</td> <td>int64</td> <td>The timestamp of K-Line，Unit: ms</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Response
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;kline&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253500000</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.41</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.54</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">181.54</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.39</span><span class="token punctuation">,</span>
+                <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">281</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_8-k-line-data-history"><a href="#_8-k-line-data-history" class="header-anchor">#</a> 8. K-Line Data History</h2> <div class="language- extra-class"><pre><code>Get the K-Line history data of the trading price over a certain period of time.
+</code></pre></div><p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>  # Request
+  GET api/v1/market/getHistoryKlines
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th><strong>Parameters</strong></th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr> <tr><td>klineType</td> <td>String</td> <td>YES</td> <td>K-Line Type</td> <td>The type of K-Line (minutes, hours, weeks etc.)</td></tr> <tr><td>startTs</td> <td>int64</td> <td>YES</td> <td>Start timestamp, Unit: ms</td> <td></td></tr> <tr><td>endTs</td> <td>int64</td> <td>YES</td> <td>End timestamp, Unit: ms</td> <td></td></tr></tbody></table> <p><strong>Remarks</strong></p> <table><thead><tr><th>klineType</th> <th>Field Description</th></tr></thead> <tbody><tr><td>1</td> <td>1min Kline</td></tr> <tr><td>3</td> <td>3min Kline</td></tr> <tr><td>5</td> <td>5min Kline</td></tr> <tr><td>15</td> <td>15min Kline</td></tr> <tr><td>30</td> <td>30min Kline</td></tr> <tr><td>60</td> <td>1h Kline</td></tr> <tr><td>120</td> <td>2h Kline</td></tr> <tr><td>240</td> <td>4h Kline</td></tr> <tr><td>360</td> <td>6h Kline</td></tr> <tr><td>720</td> <td>12h Kline</td></tr> <tr><td>1D</td> <td>1D Kline</td></tr> <tr><td>1W</td> <td>1W Kline</td></tr> <tr><td>1M</td> <td>1M Kline</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th><strong>Parameters</strong></th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>klines</td> <td>array</td> <td>K-Line data</td></tr> <tr><td>open</td> <td>float64</td> <td>Open</td></tr> <tr><td>close</td> <td>float64</td> <td>Close</td></tr> <tr><td>high</td> <td>float64</td> <td>High</td></tr> <tr><td>low</td> <td>float64</td> <td>Low</td></tr> <tr><td>volume</td> <td>float64</td> <td>Volume</td></tr> <tr><td>ts</td> <td>int64</td> <td>The timestamp of K-Line, Unit: ms</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Response
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;klines&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253140000</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.89</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.97</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">182.04</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.89</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">2136</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253200000</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.94</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.72</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">181.94</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.72</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">965</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253260000</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.69</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.72</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">181.72</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.56</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">1245</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253320000</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.72</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.73</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">181.81</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.69</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">541</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253380000</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.77</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.59</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">181.77</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.53</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">933</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253440000</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.59</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.38</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">181.62</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.38</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">1425</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token string">&quot;ts&quot;</span><span class="token operator">:</span> <span class="token number">1572253500000</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;open&quot;</span><span class="token operator">:</span> <span class="token number">181.41</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;close&quot;</span><span class="token operator">:</span> <span class="token number">181.64</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;high&quot;</span><span class="token operator">:</span> <span class="token number">181.64</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;low&quot;</span><span class="token operator">:</span> <span class="token number">181.39</span><span class="token punctuation">,</span>
+                    <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token number">923</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_9-get-swap-open-positions"><a href="#_9-get-swap-open-positions" class="header-anchor">#</a> 9. Get Swap Open Positions</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>	# Request
+    GET api/v1/market/getOpenPositions
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th><strong>Parameters</strong></th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>YES</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th><strong>Parameters</strong></th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>volume</td> <td>float64</td> <td>Volume of opened positions</td></tr> <tr><td>unit</td> <td>string</td> <td>The unit corresponding to the Volume of opened positions, CONT. - BTC, ETH, LINK, BCH, etc.</td></tr></tbody></table> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Response
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10.00&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;unit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BTC&quot;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_10-get-ticker"><a href="#_10-get-ticker" class="header-anchor">#</a> 10. Get Ticker</h2> <p><strong>HTTP Requests</strong></p> <div class="language-http extra-class"><pre class="language-http"><code>    # Request
+    GET api/v1/market/getTicker
+</code></pre></div><p><strong>Request Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Field Description</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>NO</td> <td>Trading pair symbol</td> <td>There must be a hyphen/ &quot;-&quot; in the trading pair symbol. eg: BTC-USDT</td></tr></tbody></table> <p><strong>Return Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>String</td> <td>Trading pair symbol</td></tr> <tr><td>priceChange</td> <td>String</td> <td>Price change, in USDT</td></tr> <tr><td>priceChangePercent</td> <td>String</td> <td>Price change expressed as a percentage</td></tr> <tr><td>lastPrice</td> <td>String</td> <td>The price for the last trade</td></tr> <tr><td>lastVolume</td> <td>String</td> <td>The volume for the last trade</td></tr> <tr><td>highPrice</td> <td>String</td> <td>Highest price during 24h</td></tr> <tr><td>lowPrice</td> <td>String</td> <td>Lowest price during 24h</td></tr> <tr><td>volume</td> <td>String</td> <td>Volume during last 24h in base currency</td></tr> <tr><td>dayVolume</td> <td>String</td> <td>Volume during last 24h, in USDT</td></tr> <tr><td>openPrice</td> <td>String</td> <td>24h open price</td></tr></tbody></table> <h1 id=""><a href="#" class="header-anchor">#</a></h1> <div class="language-javascript extra-class"><pre class="language-javascript"><code># Response
+    <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;symbol&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BTC-USDT&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;priceChange&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10.00&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;priceChangePercent&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;lastPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5738.23&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;lastVolume&quot;</span><span class="token operator">:</span> <span class="token string">&quot;31.21&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;highPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5938.23&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;lowPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5238.23&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;volume&quot;</span><span class="token operator">:</span> <span class="token string">&quot;23211231.13&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;dayVolume&quot;</span><span class="token operator">:</span> <span class="token string">&quot;213124412412.47&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;openPrice&quot;</span><span class="token operator">:</span> <span class="token string">&quot;5828.32&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/17/2021, 11:05:34 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/swap/base-info.html" class="prev">
+        Basic Information
+      </a></span> <span class="next"><a href="/docs/swap/account-api.html">
+        Account Interface
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.50c26c97.js" defer></script><script src="/docs/assets/js/3.4674da7f.js" defer></script><script src="/docs/assets/js/4.d8be1d73.js" defer></script><script src="/docs/assets/js/32.38bed9d2.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Trade Interface | BingX API Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="BingX Official API Reference, Swap API Reference, Spot API Reference">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7f806ca4.css" as="style"><link rel="preload" href="/docs/assets/js/app.50c26c97.js" as="script"><link rel="preload" href="/docs/assets/js/3.4674da7f.js" as="script"><link rel="preload" href="/docs/assets/js/4.d8be1d73.js" as="script"><link rel="preload" href="/docs/assets/js/21.43bb088f.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.57ce178e.js"><link rel="prefetch" href="/docs/assets/js/11.57197624.js"><link rel="prefetch" href="/docs/assets/js/12.8bfffffe.js"><link rel="prefetch" href="/docs/assets/js/13.75250926.js"><link rel="prefetch" href="/docs/assets/js/14.440c35a5.js"><link rel="prefetch" href="/docs/assets/js/15.625b7454.js"><link rel="prefetch" href="/docs/assets/js/16.8cc91b97.js"><link rel="prefetch" href="/docs/assets/js/17.74da58b6.js"><link rel="prefetch" href="/docs/assets/js/18.7bc42381.js"><link rel="prefetch" href="/docs/assets/js/19.d79677a0.js"><link rel="prefetch" href="/docs/assets/js/20.be762b53.js"><link rel="prefetch" href="/docs/assets/js/22.6f218616.js"><link rel="prefetch" href="/docs/assets/js/23.4f72778d.js"><link rel="prefetch" href="/docs/assets/js/24.1ec2b096.js"><link rel="prefetch" href="/docs/assets/js/25.104e1b98.js"><link rel="prefetch" href="/docs/assets/js/26.b1deeecb.js"><link rel="prefetch" href="/docs/assets/js/27.bc0fae4f.js"><link rel="prefetch" href="/docs/assets/js/28.39316ae0.js"><link rel="prefetch" href="/docs/assets/js/29.e2ac4532.js"><link rel="prefetch" href="/docs/assets/js/30.a386a4bb.js"><link rel="prefetch" href="/docs/assets/js/31.67a3c6c4.js"><link rel="prefetch" href="/docs/assets/js/32.38bed9d2.js"><link rel="prefetch" href="/docs/assets/js/33.ef54acbb.js"><link rel="prefetch" href="/docs/assets/js/34.d6264377.js"><link rel="prefetch" href="/docs/assets/js/35.9df323e8.js"><link rel="prefetch" href="/docs/assets/js/36.11d16e91.js"><link rel="prefetch" href="/docs/assets/js/37.74364fe6.js"><link rel="prefetch" href="/docs/assets/js/38.22df5707.js"><link rel="prefetch" href="/docs/assets/js/39.ed41d5f5.js"><link rel="prefetch" href="/docs/assets/js/40.df09a175.js"><link rel="prefetch" href="/docs/assets/js/41.3d722cfd.js"><link rel="prefetch" href="/docs/assets/js/42.e6498bc4.js"><link rel="prefetch" href="/docs/assets/js/43.8058cbcb.js"><link rel="prefetch" href="/docs/assets/js/44.2d27972b.js"><link rel="prefetch" href="/docs/assets/js/45.9d308104.js"><link rel="prefetch" href="/docs/assets/js/46.ee311158.js"><link rel="prefetch" href="/docs/assets/js/47.0b1547c0.js"><link rel="prefetch" href="/docs/assets/js/48.52086a01.js"><link rel="prefetch" href="/docs/assets/js/49.bc9199e0.js"><link rel="prefetch" href="/docs/assets/js/5.69699430.js"><link rel="prefetch" href="/docs/assets/js/50.e2064275.js"><link rel="prefetch" href="/docs/assets/js/51.fd33636b.js"><link rel="prefetch" href="/docs/assets/js/52.046a04ab.js"><link rel="prefetch" href="/docs/assets/js/53.7a563a56.js"><link rel="prefetch" href="/docs/assets/js/54.5217b343.js"><link rel="prefetch" href="/docs/assets/js/55.3b33d010.js"><link rel="prefetch" href="/docs/assets/js/56.c01ede69.js"><link rel="prefetch" href="/docs/assets/js/57.e704f967.js"><link rel="prefetch" href="/docs/assets/js/58.a4412698.js"><link rel="prefetch" href="/docs/assets/js/59.8195ef9d.js"><link rel="prefetch" href="/docs/assets/js/6.e3c66b57.js"><link rel="prefetch" href="/docs/assets/js/60.b123c332.js"><link rel="prefetch" href="/docs/assets/js/61.4457e838.js"><link rel="prefetch" href="/docs/assets/js/62.75ce18e6.js"><link rel="prefetch" href="/docs/assets/js/63.e97745bc.js"><link rel="prefetch" href="/docs/assets/js/64.f89c8b22.js"><link rel="prefetch" href="/docs/assets/js/65.4202369e.js"><link rel="prefetch" href="/docs/assets/js/66.1d90cde4.js"><link rel="prefetch" href="/docs/assets/js/67.cba93366.js"><link rel="prefetch" href="/docs/assets/js/68.77830980.js"><link rel="prefetch" href="/docs/assets/js/69.66ebe0e3.js"><link rel="prefetch" href="/docs/assets/js/7.e9ff2992.js"><link rel="prefetch" href="/docs/assets/js/70.3db5baea.js"><link rel="prefetch" href="/docs/assets/js/71.f0f80cb9.js"><link rel="prefetch" href="/docs/assets/js/72.2a46fb47.js"><link rel="prefetch" href="/docs/assets/js/73.92b5a65a.js"><link rel="prefetch" href="/docs/assets/js/74.9fa565f3.js"><link rel="prefetch" href="/docs/assets/js/75.536ec68c.js"><link rel="prefetch" href="/docs/assets/js/76.eecc2383.js"><link rel="prefetch" href="/docs/assets/js/77.3fafd034.js"><link rel="prefetch" href="/docs/assets/js/78.9f0d2e1f.js"><link rel="prefetch" href="/docs/assets/js/8.db263e85.js"><link rel="prefetch" href="/docs/assets/js/9.124ab448.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.8f04fa7f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7f806ca4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/logo.svg" alt="BingX API Docs" class="logo"></a> <div class="navs"><nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/swap/" class="nav-link">
+  Perpetual Swap API Reference
+</a></div><div class="nav-item"><a href="/docs/spot/" class="nav-link router-link-active">
+  Spot
+</a></div><div class="nav-item"><a href="/docs/standard/" class="nav-link">
+  Standard Contract
+</a></div></nav></div> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/spot/trade-interface.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/spot/trade-interface.html" class="nav-link">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh-hk/spot/trade-interface.html" class="nav-link">
+  繁体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/swap/" class="nav-link">
+  Perpetual Swap API Reference
+</a></div><div class="nav-item"><a href="/docs/spot/" class="nav-link router-link-active">
+  Spot
+</a></div><div class="nav-item"><a href="/docs/standard/" class="nav-link">
+  Standard Contract
+</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Spot API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/spot/basic-information.html" class="sidebar-link">Basic Information</a></li><li><a href="/docs/spot/authentication.html" class="sidebar-link">Signature Authentication</a></li><li><a href="/docs/spot/trade-interface.html" aria-current="page" class="active sidebar-link">Trade Interface</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/spot/trade-interface.html#create-an-order" class="sidebar-link">Create an Order</a></li><li class="sidebar-sub-header"><a href="/docs/spot/trade-interface.html#cancel-an-order" class="sidebar-link">Cancel an Order</a></li><li class="sidebar-sub-header"><a href="/docs/spot/trade-interface.html#query-orders" class="sidebar-link">Query Orders</a></li><li class="sidebar-sub-header"><a href="/docs/spot/trade-interface.html#query-open-orders" class="sidebar-link">Query Open Orders</a></li><li class="sidebar-sub-header"><a href="/docs/spot/trade-interface.html#query-order-history" class="sidebar-link">Query Order History</a></li><li class="sidebar-sub-header"><a href="/docs/spot/trade-interface.html#query-assets" class="sidebar-link">Query Assets</a></li></ul></li><li><a href="/docs/spot/market-interface.html" class="sidebar-link">Market Interface</a></li><li><a href="/docs/spot/user-interface.html" class="sidebar-link">User Universal Transfer Interface</a></li><li><a href="/docs/spot/other-interface.html" class="sidebar-link">Other Interface</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Spot Socket API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/spot/socket.html" class="sidebar-link">Websocket Introduction</a></li><li><a href="/docs/spot/socket-market.html" class="sidebar-link">Websocket Market Data</a></li><li><a href="/docs/spot/socket-account.html" class="sidebar-link">Websocket Account Data</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CoinMarketCap &amp; CoinGecko</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/spot/public/authentication.html" class="sidebar-link">Authentication</a></li><li><a href="/docs/spot/public/basic-information.html" class="sidebar-link">Basic Information</a></li><li><a href="/docs/spot/public/market-interface.html" class="sidebar-link">Market Interface</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="trade-interface"><a href="#trade-interface" class="header-anchor">#</a> Trade Interface</h1> <h2 id="create-an-order"><a href="#create-an-order" class="header-anchor">#</a> Create an Order</h2> <p><strong>API</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    POST /openApi/spot/v1/trade/order
+</code></pre></div><p><strong>Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>YES</td> <td>Trading pair, e.g., BTC-USDT</td></tr> <tr><td>side</td> <td>string</td> <td>YES</td> <td>BUY/SELL</td></tr> <tr><td>type</td> <td>string</td> <td>YES</td> <td>MARKET/LIMIT</td></tr> <tr><td>timeInForce</td> <td>string</td> <td>NO</td> <td>IOC/POC</td></tr> <tr><td>quantity</td> <td>float64</td> <td>NO</td> <td>Original quantity, e.g., 0.1BTC</td></tr> <tr><td>quoteOrderQty</td> <td>float64</td> <td>NO</td> <td>Quote order quantity, e.g., 100USDT</td></tr> <tr><td>price</td> <td>float64</td> <td>NO</td> <td>Price, e.g., 10000USDT</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>NO</td> <td>Request valid time window value, Unit: milliseconds</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>YES</td> <td>Timestamp of initiating the request, Unit: milliseconds</td></tr></tbody></table> <p><strong>Notes</strong></p> <ul><li>For limit orders, <code>price</code> is required.</li> <li>For limit orders, either <code>quantity</code> or <code>quoteOrderQty</code> is required. When two parameters are passed at the same time, the server uses the parameter <code>quantity</code> first.</li> <li>For buy-side market orders, <code>quoteOrderQty</code> is required.</li> <li>For sell-side market orders, <code>quantity</code> is required.</li> <li>Orders created by the interface will not be displayed on the APP and web pages.</li></ul> <p><strong>Response</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>Trading pair</td></tr> <tr><td>orderId</td> <td>int64</td> <td>Order ID</td></tr> <tr><td>transactTime</td> <td>int64</td> <td>Transaction timestamp</td></tr> <tr><td>price</td> <td>string</td> <td>Price</td></tr> <tr><td>origQty</td> <td>string</td> <td>Original quantity</td></tr> <tr><td>executedQty</td> <td>string</td> <td>Executed quantity</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>Cumulative quote asset transacted quantity</td></tr> <tr><td>status</td> <td>string</td> <td>Order status: NEW, PENDING, PARTIALLY_FILLED, FILLED, CANCELED, FAILED</td></tr> <tr><td>type</td> <td>string</td> <td>MARKET/LIMIT</td></tr> <tr><td>side</td> <td>string</td> <td>BUY/SELL</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+        &quot;orderId&quot;: 1514090846268424192,
+        &quot;transactTime&quot;: 1649822362855,
+        &quot;price&quot;: &quot;0.5&quot;,
+        &quot;origQty&quot;: &quot;10&quot;,
+        &quot;executedQty&quot;: &quot;0&quot;,
+        &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+        &quot;status&quot;: &quot;PENDING&quot;,
+        &quot;type&quot;: &quot;LIMIT&quot;,
+        &quot;side&quot;: &quot;BUY&quot;
+    }
+}
+</code></pre></div><h2 id="cancel-an-order"><a href="#cancel-an-order" class="header-anchor">#</a> Cancel an Order</h2> <p><strong>API</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    POST /openApi/spot/v1/trade/cancel
+</code></pre></div><p><strong>Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>YES</td> <td>Trading pair, e.g., BTC-USDT</td></tr> <tr><td>orderId</td> <td>int64</td> <td>YES</td> <td>Order ID</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>NO</td> <td>Request valid time window value, Unit: milliseconds</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>YES</td> <td>Timestamp of initiating the request, Unit: milliseconds</td></tr></tbody></table> <p><strong>Response</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>Trading pair</td></tr> <tr><td>orderId</td> <td>int64</td> <td>Order ID</td></tr> <tr><td>price</td> <td>string</td> <td>Price</td></tr> <tr><td>origQty</td> <td>string</td> <td>Original quantity</td></tr> <tr><td>executedQty</td> <td>string</td> <td>Executed quantity</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>Cumulative quote asset transacted quantity</td></tr> <tr><td>status</td> <td>string</td> <td>Order status: NEW, PENDING, PARTIALLY_FILLED, FILLED, CANCELED, FAILED</td></tr> <tr><td>type</td> <td>string</td> <td>MARKET/LIMIT</td></tr> <tr><td>side</td> <td>string</td> <td>BUY/SELL</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+        &quot;orderId&quot;: 1514090846268424192,
+        &quot;price&quot;: &quot;0.5&quot;,
+        &quot;origQty&quot;: &quot;10&quot;,
+        &quot;executedQty&quot;: &quot;0&quot;,
+        &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+        &quot;status&quot;: &quot;CANCELED&quot;,
+        &quot;type&quot;: &quot;LIMIT&quot;,
+        &quot;side&quot;: &quot;BUY&quot;
+    }
+}
+</code></pre></div><h2 id="query-orders"><a href="#query-orders" class="header-anchor">#</a> Query Orders</h2> <p><strong>API</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/trade/query
+</code></pre></div><p><strong>Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>YES</td> <td>Trading pair, e.g., BTC-USDT</td></tr> <tr><td>orderId</td> <td>int64</td> <td>YES</td> <td>Order ID</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>NO</td> <td>Request valid time window value, Unit: milliseconds</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>YES</td> <td>Timestamp of initiating the request, Unit: milliseconds</td></tr></tbody></table> <p><strong>Response</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>Trading pair symbol</td></tr> <tr><td>orderId</td> <td>int64</td> <td>Order ID</td></tr> <tr><td>price</td> <td>string</td> <td>Price</td></tr> <tr><td>origQty</td> <td>string</td> <td>Original quantity</td></tr> <tr><td>executedQty</td> <td>string</td> <td>Executed quantity</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>Cumulative quote asset transacted quantity</td></tr> <tr><td>status</td> <td>string</td> <td>Order status: NEW, PENDING, PARTIALLY_FILLED, FILLED, CANCELED, FAILED</td></tr> <tr><td>type</td> <td>string</td> <td>MARKET/LIMIT</td></tr> <tr><td>side</td> <td>string</td> <td>BUY/SELL</td></tr> <tr><td>time</td> <td>int64</td> <td>Order timestamp</td></tr> <tr><td>updateTime</td> <td>int64</td> <td>Update timestamp</td></tr> <tr><td>origQuoteOrderQty</td> <td>string</td> <td>Original quote order quantity</td></tr> <tr><td>fee</td> <td>string</td> <td>Fee</td></tr> <tr><td>feeAsset</td> <td>string</td> <td>Fee asset</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+        &quot;orderId&quot;: 1514087361158316032,
+        &quot;price&quot;: &quot;0.5&quot;,
+        &quot;origQty&quot;: &quot;10&quot;,
+        &quot;executedQty&quot;: &quot;0&quot;,
+        &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+        &quot;status&quot;: &quot;CANCELED&quot;,
+        &quot;type&quot;: &quot;LIMIT&quot;,
+        &quot;side&quot;: &quot;BUY&quot;,
+        &quot;time&quot;: 1649821532000,
+        &quot;updateTime&quot;: 1649821543000,
+        &quot;origQuoteOrderQty&quot;: &quot;0&quot;,
+        &quot;fee&quot;: &quot;0&quot;,
+        &quot;feeAsset&quot;: &quot;XRP&quot;
+    }
+}
+
+</code></pre></div><h2 id="query-open-orders"><a href="#query-open-orders" class="header-anchor">#</a> Query Open Orders</h2> <p><strong>API</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/trade/openOrders
+</code></pre></div><p><strong>Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>YES</td> <td>Trading pair symbol, e.g., BTC-USDT</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>NO</td> <td>Request valid time window value, Unit: milliseconds</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>YES</td> <td>Timestamp of initiating the request, Unit: milliseconds</td></tr></tbody></table> <p><strong>Response</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>orders</td> <td>array</td> <td>Order list,max length is 2000, refer to the table below for order fields</td></tr></tbody></table> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>Trading pair symbol</td></tr> <tr><td>orderId</td> <td>int64</td> <td>Order ID</td></tr> <tr><td>price</td> <td>string</td> <td>Price</td></tr> <tr><td>origQty</td> <td>string</td> <td>Original quantity</td></tr> <tr><td>executedQty</td> <td>string</td> <td>Executed quantity</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>Cumulative quote asset transacted quantity</td></tr> <tr><td>status</td> <td>string</td> <td>Order status: NEW, PENDING, PARTIALLY_FILLED, FILLED, CANCELED, FAILED</td></tr> <tr><td>type</td> <td>string</td> <td>MARKET/LIMIT</td></tr> <tr><td>side</td> <td>string</td> <td>BUY/SELL</td></tr> <tr><td>time</td> <td>int64</td> <td>Order timestamp</td></tr> <tr><td>updateTime</td> <td>int64</td> <td>Update timestamp</td></tr> <tr><td>origQuoteOrderQty</td> <td>string</td> <td>Original quote order quantity</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;orders&quot;: [
+            {
+                &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+                &quot;orderId&quot;: 1514073325788200960,
+                &quot;price&quot;: &quot;0.5&quot;,
+                &quot;origQty&quot;: &quot;20&quot;,
+                &quot;executedQty&quot;: &quot;0&quot;,
+                &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+                &quot;status&quot;: &quot;PENDING&quot;,
+                &quot;type&quot;: &quot;LIMIT&quot;,
+                &quot;side&quot;: &quot;BUY&quot;,
+                &quot;time&quot;: 1649818185647,
+                &quot;updateTime&quot;: 1649818185647,
+                &quot;origQuoteOrderQty&quot;: &quot;0&quot;
+            }
+        ]
+    }
+}
+</code></pre></div><h2 id="query-order-history"><a href="#query-order-history" class="header-anchor">#</a> Query Order History</h2> <p><strong>API</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/trade/historyOrders
+</code></pre></div><p><strong>Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>YES</td> <td>Trading pair, e.g., BTC-USDT</td></tr> <tr><td>orderId</td> <td>int64</td> <td>NO</td> <td></td></tr> <tr><td>startTime</td> <td>int64</td> <td>NO</td> <td>Start timestamp, Unit: ms</td></tr> <tr><td>endTime</td> <td>int64</td> <td>NO</td> <td>End timestamp, Unit: ms</td></tr> <tr><td>pageIndex</td> <td>int64</td> <td>NO</td> <td>Page number, must greather than 0</td></tr> <tr><td>pageSize</td> <td>int64</td> <td>NO</td> <td>Page size,Max 100</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>NO</td> <td>Request valid time window value, Unit: milliseconds</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>YES</td> <td>Timestamp of initiating the request, Unit: milliseconds</td></tr></tbody></table> <p><strong>Notes</strong></p> <ul><li>If orderId is set, orders &gt;= orderId. Otherwise, the most recent orders will be returned.</li> <li>If startTime and endTime are provided, orderId is not required.</li></ul> <p><strong>Response</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>orders</td> <td>array</td> <td>Order list, refer to the table below for order fields</td></tr></tbody></table> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>Trading pair symbol</td></tr> <tr><td>orderId</td> <td>int64</td> <td>Order ID</td></tr> <tr><td>price</td> <td>string</td> <td>Price</td></tr> <tr><td>origQty</td> <td>string</td> <td>Original Quantity</td></tr> <tr><td>executedQty</td> <td>string</td> <td>Executed Quantity</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>Cumulative quote asset transacted quantity</td></tr> <tr><td>status</td> <td>string</td> <td>Order status: NEW, PENDING, PARTIALLY_FILLED, FILLED, CANCELED, FAILED</td></tr> <tr><td>type</td> <td>string</td> <td>MARKET/LIMIT</td></tr> <tr><td>side</td> <td>string</td> <td>BUY/SELL</td></tr> <tr><td>time</td> <td>int64</td> <td>Order timestamp</td></tr> <tr><td>updateTime</td> <td>int64</td> <td>Update timestamp</td></tr> <tr><td>origQuoteOrderQty</td> <td>string</td> <td>Original quote order quantity</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;orders&quot;: [
+            {
+                &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+                &quot;orderId&quot;: 1502203895118561280,
+                &quot;price&quot;: &quot;0.74011&quot;,
+                &quot;origQty&quot;: &quot;0&quot;,
+                &quot;executedQty&quot;: &quot;13.5&quot;,
+                &quot;cummulativeQuoteQty&quot;: &quot;9.9927&quot;,
+                &quot;status&quot;: &quot;FILLED&quot;,
+                &quot;type&quot;: &quot;MARKET&quot;,
+                &quot;side&quot;: &quot;BUY&quot;,
+                &quot;time&quot;: 1646988293000,
+                &quot;updateTime&quot;: 1646988293000,
+                &quot;origQuoteOrderQty&quot;: &quot;10&quot;
+            }
+        ]
+    }
+}
+</code></pre></div><h2 id="query-assets"><a href="#query-assets" class="header-anchor">#</a> Query Assets</h2> <p><strong>API</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/account/balance
+</code></pre></div><p><strong>Parameters</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Required</th> <th>Description</th></tr></thead> <tbody><tr><td>recvWindow</td> <td>int64</td> <td>NO</td> <td>Request valid time window value, Unit: milliseconds</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>YES</td> <td>Timestamp of initiating the request, Unit: milliseconds</td></tr></tbody></table> <p><strong>Response</strong></p> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>balances</td> <td>array</td> <td>Asset list, element fields refer to the following table</td></tr></tbody></table> <table><thead><tr><th>Parameters</th> <th>Type</th> <th>Description</th></tr></thead> <tbody><tr><td>asset</td> <td>string</td> <td>Asset name</td></tr> <tr><td>free</td> <td>string</td> <td>Available asset</td></tr> <tr><td>locked</td> <td>string</td> <td>Freeze asset</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;ttl&quot;: 1,
+    &quot;data&quot;: {
+        &quot;balances&quot;: [
+            {
+                &quot;asset&quot;: &quot;USDT&quot;,
+                &quot;free&quot;: &quot;16.73971130673954&quot;,
+                &quot;locked&quot;: &quot;0&quot;
+            }
+        ]
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/10/2022, 5:53:34 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/spot/authentication.html" class="prev">
+        Signature Authentication
+      </a></span> <span class="next"><a href="/docs/spot/market-interface.html">
+        Market Interface
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.50c26c97.js" defer></script><script src="/docs/assets/js/3.4674da7f.js" defer></script><script src="/docs/assets/js/4.d8be1d73.js" defer></script><script src="/docs/assets/js/21.43bb088f.js" defer></script>
+  </body>
+</html>

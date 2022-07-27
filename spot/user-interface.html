@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>User Universal Transfer Interface | BingX API Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="BingX Official API Reference, Swap API Reference, Spot API Reference">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7f806ca4.css" as="style"><link rel="preload" href="/docs/assets/js/app.50c26c97.js" as="script"><link rel="preload" href="/docs/assets/js/3.4674da7f.js" as="script"><link rel="preload" href="/docs/assets/js/4.d8be1d73.js" as="script"><link rel="preload" href="/docs/assets/js/22.6f218616.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.57ce178e.js"><link rel="prefetch" href="/docs/assets/js/11.57197624.js"><link rel="prefetch" href="/docs/assets/js/12.8bfffffe.js"><link rel="prefetch" href="/docs/assets/js/13.75250926.js"><link rel="prefetch" href="/docs/assets/js/14.440c35a5.js"><link rel="prefetch" href="/docs/assets/js/15.625b7454.js"><link rel="prefetch" href="/docs/assets/js/16.8cc91b97.js"><link rel="prefetch" href="/docs/assets/js/17.74da58b6.js"><link rel="prefetch" href="/docs/assets/js/18.7bc42381.js"><link rel="prefetch" href="/docs/assets/js/19.d79677a0.js"><link rel="prefetch" href="/docs/assets/js/20.be762b53.js"><link rel="prefetch" href="/docs/assets/js/21.43bb088f.js"><link rel="prefetch" href="/docs/assets/js/23.4f72778d.js"><link rel="prefetch" href="/docs/assets/js/24.1ec2b096.js"><link rel="prefetch" href="/docs/assets/js/25.104e1b98.js"><link rel="prefetch" href="/docs/assets/js/26.b1deeecb.js"><link rel="prefetch" href="/docs/assets/js/27.bc0fae4f.js"><link rel="prefetch" href="/docs/assets/js/28.39316ae0.js"><link rel="prefetch" href="/docs/assets/js/29.e2ac4532.js"><link rel="prefetch" href="/docs/assets/js/30.a386a4bb.js"><link rel="prefetch" href="/docs/assets/js/31.67a3c6c4.js"><link rel="prefetch" href="/docs/assets/js/32.38bed9d2.js"><link rel="prefetch" href="/docs/assets/js/33.ef54acbb.js"><link rel="prefetch" href="/docs/assets/js/34.d6264377.js"><link rel="prefetch" href="/docs/assets/js/35.9df323e8.js"><link rel="prefetch" href="/docs/assets/js/36.11d16e91.js"><link rel="prefetch" href="/docs/assets/js/37.74364fe6.js"><link rel="prefetch" href="/docs/assets/js/38.22df5707.js"><link rel="prefetch" href="/docs/assets/js/39.ed41d5f5.js"><link rel="prefetch" href="/docs/assets/js/40.df09a175.js"><link rel="prefetch" href="/docs/assets/js/41.3d722cfd.js"><link rel="prefetch" href="/docs/assets/js/42.e6498bc4.js"><link rel="prefetch" href="/docs/assets/js/43.8058cbcb.js"><link rel="prefetch" href="/docs/assets/js/44.2d27972b.js"><link rel="prefetch" href="/docs/assets/js/45.9d308104.js"><link rel="prefetch" href="/docs/assets/js/46.ee311158.js"><link rel="prefetch" href="/docs/assets/js/47.0b1547c0.js"><link rel="prefetch" href="/docs/assets/js/48.52086a01.js"><link rel="prefetch" href="/docs/assets/js/49.bc9199e0.js"><link rel="prefetch" href="/docs/assets/js/5.69699430.js"><link rel="prefetch" href="/docs/assets/js/50.e2064275.js"><link rel="prefetch" href="/docs/assets/js/51.fd33636b.js"><link rel="prefetch" href="/docs/assets/js/52.046a04ab.js"><link rel="prefetch" href="/docs/assets/js/53.7a563a56.js"><link rel="prefetch" href="/docs/assets/js/54.5217b343.js"><link rel="prefetch" href="/docs/assets/js/55.3b33d010.js"><link rel="prefetch" href="/docs/assets/js/56.c01ede69.js"><link rel="prefetch" href="/docs/assets/js/57.e704f967.js"><link rel="prefetch" href="/docs/assets/js/58.a4412698.js"><link rel="prefetch" href="/docs/assets/js/59.8195ef9d.js"><link rel="prefetch" href="/docs/assets/js/6.e3c66b57.js"><link rel="prefetch" href="/docs/assets/js/60.b123c332.js"><link rel="prefetch" href="/docs/assets/js/61.4457e838.js"><link rel="prefetch" href="/docs/assets/js/62.75ce18e6.js"><link rel="prefetch" href="/docs/assets/js/63.e97745bc.js"><link rel="prefetch" href="/docs/assets/js/64.f89c8b22.js"><link rel="prefetch" href="/docs/assets/js/65.4202369e.js"><link rel="prefetch" href="/docs/assets/js/66.1d90cde4.js"><link rel="prefetch" href="/docs/assets/js/67.cba93366.js"><link rel="prefetch" href="/docs/assets/js/68.77830980.js"><link rel="prefetch" href="/docs/assets/js/69.66ebe0e3.js"><link rel="prefetch" href="/docs/assets/js/7.e9ff2992.js"><link rel="prefetch" href="/docs/assets/js/70.3db5baea.js"><link rel="prefetch" href="/docs/assets/js/71.f0f80cb9.js"><link rel="prefetch" href="/docs/assets/js/72.2a46fb47.js"><link rel="prefetch" href="/docs/assets/js/73.92b5a65a.js"><link rel="prefetch" href="/docs/assets/js/74.9fa565f3.js"><link rel="prefetch" href="/docs/assets/js/75.536ec68c.js"><link rel="prefetch" href="/docs/assets/js/76.eecc2383.js"><link rel="prefetch" href="/docs/assets/js/77.3fafd034.js"><link rel="prefetch" href="/docs/assets/js/78.9f0d2e1f.js"><link rel="prefetch" href="/docs/assets/js/8.db263e85.js"><link rel="prefetch" href="/docs/assets/js/9.124ab448.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.8f04fa7f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7f806ca4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/logo.svg" alt="BingX API Docs" class="logo"></a> <div class="navs"><nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/swap/" class="nav-link">
+  Perpetual Swap API Reference
+</a></div><div class="nav-item"><a href="/docs/spot/" class="nav-link router-link-active">
+  Spot
+</a></div><div class="nav-item"><a href="/docs/standard/" class="nav-link">
+  Standard Contract
+</a></div></nav></div> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/spot/user-interface.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/spot/user-interface.html" class="nav-link">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh-hk/spot/user-interface.html" class="nav-link">
+  繁体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/swap/" class="nav-link">
+  Perpetual Swap API Reference
+</a></div><div class="nav-item"><a href="/docs/spot/" class="nav-link router-link-active">
+  Spot
+</a></div><div class="nav-item"><a href="/docs/standard/" class="nav-link">
+  Standard Contract
+</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Spot API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/spot/basic-information.html" class="sidebar-link">Basic Information</a></li><li><a href="/docs/spot/authentication.html" class="sidebar-link">Signature Authentication</a></li><li><a href="/docs/spot/trade-interface.html" class="sidebar-link">Trade Interface</a></li><li><a href="/docs/spot/market-interface.html" class="sidebar-link">Market Interface</a></li><li><a href="/docs/spot/user-interface.html" aria-current="page" class="active sidebar-link">User Universal Transfer Interface</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/spot/user-interface.html#user-universal-transfer" class="sidebar-link">User Universal Transfer</a></li><li class="sidebar-sub-header"><a href="/docs/spot/user-interface.html#query-user-universal-transfer-history-user-data" class="sidebar-link">Query User Universal Transfer History (USER_DATA)</a></li><li class="sidebar-sub-header"><a href="/docs/spot/user-interface.html#deposit-history-supporting-network" class="sidebar-link">Deposit History(supporting network)</a></li><li class="sidebar-sub-header"><a href="/docs/spot/user-interface.html#withdraw-history-supporting-network" class="sidebar-link">Withdraw History (supporting network)</a></li></ul></li><li><a href="/docs/spot/other-interface.html" class="sidebar-link">Other Interface</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Spot Socket API Reference</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/spot/socket.html" class="sidebar-link">Websocket Introduction</a></li><li><a href="/docs/spot/socket-market.html" class="sidebar-link">Websocket Market Data</a></li><li><a href="/docs/spot/socket-account.html" class="sidebar-link">Websocket Account Data</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CoinMarketCap &amp; CoinGecko</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/spot/public/authentication.html" class="sidebar-link">Authentication</a></li><li><a href="/docs/spot/public/basic-information.html" class="sidebar-link">Basic Information</a></li><li><a href="/docs/spot/public/market-interface.html" class="sidebar-link">Market Interface</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="user-universal-transfer-interface"><a href="#user-universal-transfer-interface" class="header-anchor">#</a> User Universal Transfer Interface</h1> <h2 id="user-universal-transfer"><a href="#user-universal-transfer" class="header-anchor">#</a> User Universal Transfer</h2> <p><strong>Interface</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    POST /openApi/api/v3/asset/transfer
+</code></pre></div><p><strong>parameter</strong></p> <table><thead><tr><th>Parameter name</th> <th>Type</th> <th>Required or not</th> <th>Remarks</th></tr></thead> <tbody><tr><td>type</td> <td>ENUM</td> <td>yes</td> <td>transfer tpye</td></tr> <tr><td>asset</td> <td>STRING</td> <td>no</td> <td>coin name e.g. USDT</td></tr> <tr><td>amount</td> <td>DECIMAL</td> <td>no</td> <td>amount</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>no</td> <td>Execution window time, cannot be greater than 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>no</td> <td>current timestamp e.g. 1658748648396</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>   
+      ENUM of transfer types:
+     
+      FUND_SFUTURES，Funding Account -&gt; Standard Contract
+     
+      SFUTURES_FUND，Standard Contract -&gt; Funding Account
+     
+      FUND_PFUTURES，Funding Account -&gt; Professional Contract
+     
+      PFUTURES_FUND，Professional Contract -&gt; Funding Account
+     
+      SFUTURES_PFUTURES，Standard Contract -&gt; Professional Contract
+     
+      PFUTURES_SFUTURES，Professional Contract -&gt; Standard Contract
+   
+</code></pre></div><p><strong>response</strong></p> <table><thead><tr><th>parameter name</th> <th>type</th> <th>remarks</th></tr></thead> <tbody><tr><td>tranId</td> <td>LONG</td> <td>Transaction ID</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;tranId&quot;:13526853623
+}
+</code></pre></div><h2 id="query-user-universal-transfer-history-user-data"><a href="#query-user-universal-transfer-history-user-data" class="header-anchor">#</a> Query User Universal Transfer History (USER_DATA)</h2> <p><strong>Interface</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/api/v3/asset/transfer
+</code></pre></div><p><strong>Parameter</strong></p> <table><thead><tr><th>Parameter name</th> <th>Type</th> <th>Required or not</th> <th>Remarks</th></tr></thead> <tbody><tr><td>type</td> <td>ENUM</td> <td>yes</td> <td>transfer type</td></tr> <tr><td>startTime</td> <td>LONG</td> <td>no</td> <td>Starting time 1658748648396</td></tr> <tr><td>endTime</td> <td>LONG</td> <td>no</td> <td>End Time   1658748648396</td></tr> <tr><td>current</td> <td>Int</td> <td>no</td> <td>current page default1</td></tr> <tr><td>size</td> <td>Int</td> <td>no</td> <td>Page size default 10 can not exceed 100</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>no</td> <td>Execution window time, cannot be greater than 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>no</td> <td>current timestamp 1658748648396</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>   
+      ENUM of transfer types:
+     
+      FUND_SFUTURES，Funding Account -&gt; Standard Contract
+     
+      SFUTURES_FUND，Standard Contract -&gt; Funding Account
+     
+      FUND_PFUTURES，Funding Account -&gt; Professional Contract
+     
+      PFUTURES_FUND，Professional Contract -&gt; Funding Account
+     
+      SFUTURES_PFUTURES，Standard Contract -&gt; Professional Contract
+     
+      PFUTURES_SFUTURES，Professional Contract -&gt; Standard Contract
+   
+</code></pre></div><p><strong>response</strong></p> <table><thead><tr><th>parameter name</th> <th>type</th> <th>remarks</th></tr></thead> <tbody><tr><td>total</td> <td>LONG</td> <td>total</td></tr> <tr><td>rows</td> <td>Array</td> <td>Array</td></tr> <tr><td>asset</td> <td>String</td> <td>coin name</td></tr> <tr><td>amount</td> <td>DECIMAL</td> <td>coin amount</td></tr> <tr><td>type</td> <td>ENUM</td> <td>transfer type</td></tr> <tr><td>status</td> <td>String</td> <td>CONFIRMED</td></tr> <tr><td>tranId</td> <td>LONG</td> <td>Transaction ID</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>Transfer time stamp</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;total&quot;:3,
+    &quot;rows&quot;:[
+        {
+            &quot;asset&quot;:&quot;USDT&quot;,
+            &quot;amount&quot;:&quot;-100.00000000000000000000&quot;,
+            &quot;type&quot;:&quot;FUND_SFUTURES&quot;,
+            &quot;status&quot;:&quot;CONFIRMED&quot;,
+            &quot;tranId&quot;:1067594500957016069,
+            &quot;timestamp&quot;:1658388859000
+        },
+        {
+            &quot;asset&quot;:&quot;USDT&quot;,
+            &quot;amount&quot;:&quot;-33.00000000000000000000&quot;,
+            &quot;type&quot;:&quot;FUND_SFUTURES&quot;,
+            &quot;status&quot;:&quot;CONFIRMED&quot;,
+            &quot;tranId&quot;:1069064111112065025,
+            &quot;timestamp&quot;:1658739241000
+        },
+        {
+            &quot;asset&quot;:&quot;USDT&quot;,
+            &quot;amount&quot;:&quot;-100.00000000000000000000&quot;,
+            &quot;type&quot;:&quot;FUND_SFUTURES&quot;,
+            &quot;status&quot;:&quot;CONFIRMED&quot;,
+            &quot;tranId&quot;:1069099446076444674,
+            &quot;timestamp&quot;:1658747666000
+        }
+    ]
+}
+</code></pre></div><h2 id="deposit-history-supporting-network"><a href="#deposit-history-supporting-network" class="header-anchor">#</a> Deposit History(supporting network)</h2> <p><strong>Interface</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/api/v3/capital/deposit/hisrec
+</code></pre></div><p><strong>Parameter</strong></p> <table><thead><tr><th>Parameter name</th> <th>Type</th> <th>Required or not</th> <th>Remarks</th></tr></thead> <tbody><tr><td>coin</td> <td>String</td> <td>no</td> <td>coin name</td></tr> <tr><td>status</td> <td>Int</td> <td>no</td> <td>status(0:pending,6: credited but cannot withdraw, 1:success)</td></tr> <tr><td>startTime</td> <td>LONG</td> <td>no</td> <td>Starting time   1658748648396</td></tr> <tr><td>endTime</td> <td>LONG</td> <td>no</td> <td>End Time   1658748648396</td></tr> <tr><td>offset</td> <td>Int</td> <td>no</td> <td>offset default0</td></tr> <tr><td>limit</td> <td>Int</td> <td>no</td> <td>Page size default 1000 cannot exceed 1000</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>no</td> <td>Execution window time, cannot be greater than 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>yes</td> <td>current timestamp 1658748648396</td></tr></tbody></table> <p><strong>response</strong></p> <table><thead><tr><th>parameter name</th> <th>type</th> <th>remarks</th></tr></thead> <tbody><tr><td>amount</td> <td>DECIMAL</td> <td>Recharge amount</td></tr> <tr><td>coin</td> <td>String</td> <td>coin name</td></tr> <tr><td>network</td> <td>String</td> <td>recharge network</td></tr> <tr><td>status</td> <td>Int</td> <td>Status Status 0-Confirmed-10-To be confirmed (under review) 20-Applied for block 30-Approved and passed 40-Approval failed 50-Exported 60-Preliminary confirmation of recharge (final confirmation becomes 0) 70-Approved failed and returned assets</td></tr> <tr><td>address</td> <td>String</td> <td>recharge address</td></tr> <tr><td>addressTag</td> <td>String</td> <td>Remark</td></tr> <tr><td>txId</td> <td>LONG</td> <td>transaction id</td></tr> <tr><td>insertTime</td> <td>LONG</td> <td>transaction hour</td></tr> <tr><td>transferType</td> <td>LONG</td> <td>Transaction Type 0 = Recharge</td></tr> <tr><td>unlockConfirm</td> <td>LONG</td> <td>confirm times for unlocking</td></tr> <tr><td>confirmTimes</td> <td>LONG</td> <td>Network confirmation times</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>[
+    {
+        &quot;amount&quot;:&quot;0.00999800&quot;,
+        &quot;coin&quot;:&quot;PAXG&quot;,
+        &quot;network&quot;:&quot;ETH&quot;,
+        &quot;status&quot;:1,
+        &quot;address&quot;:&quot;0x788cabe9236ce061e5a892e1a59395a81fc8d62c&quot;,
+        &quot;addressTag&quot;:&quot;&quot;,
+        &quot;txId&quot;:&quot;0xaad4654a3234aa6118af9b4b335f5ae81c360b2394721c019b5d1e75328b09f3&quot;,
+        &quot;insertTime&quot;:1599621997000,
+        &quot;transferType&quot;:0,
+        &quot;unlockConfirm&quot;:&quot;12/12&quot;, // confirm times for unlocking
+        &quot;confirmTimes&quot;:&quot;12/12&quot;
+    },
+    {
+        &quot;amount&quot;:&quot;0.50000000&quot;,
+        &quot;coin&quot;:&quot;IOTA&quot;,
+        &quot;network&quot;:&quot;IOTA&quot;,
+        &quot;status&quot;:1,
+        &quot;address&quot;:&quot;SIZ9VLMHWATXKV99LH99CIGFJFUMLEHGWVZVNNZXRJJVWBPHYWPPBOSDORZ9EQSHCZAMPVAPGFYQAUUV9DROOXJLNW&quot;,
+        &quot;addressTag&quot;:&quot;&quot;,
+        &quot;txId&quot;:&quot;ESBFVQUTPIWQNJSPXFNHNYHSQNTGKRVKPRABQWTAXCDWOAKDKYWPTVG9BGXNVNKTLEJGESAVXIKIZ9999&quot;,
+        &quot;insertTime&quot;:1599620082000,
+        &quot;transferType&quot;:0,
+        &quot;unlockConfirm&quot;:&quot;1/12&quot;,
+        &quot;confirmTimes&quot;:&quot;1/1&quot;
+    }
+]
+</code></pre></div><h2 id="withdraw-history-supporting-network"><a href="#withdraw-history-supporting-network" class="header-anchor">#</a> Withdraw History (supporting network)</h2> <p><strong>Interface</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/api/v3/capital/withdraw/history
+</code></pre></div><p><strong>Parameter</strong></p> <table><thead><tr><th>Parameter name</th> <th>Type</th> <th>Required or not</th> <th>Remarks</th></tr></thead> <tbody><tr><td>coin</td> <td>String</td> <td>no</td> <td>coin name</td></tr> <tr><td>withdrawOrderId</td> <td>String</td> <td>no</td> <td>Custom ID, if there is none, this field will not be returned</td></tr> <tr><td>status</td> <td>Int</td> <td>no</td> <td>Status (0: Confirmation Email has been sent, 2: Waiting for confirmation 3: Rejected 4: Processing 5: Withdrawal transaction failed 6 Withdrawal completed)</td></tr> <tr><td>startTime</td> <td>LONG</td> <td>no</td> <td>Starting time   1658748648396</td></tr> <tr><td>endTime</td> <td>LONG</td> <td>no</td> <td>End Time   1658748648396</td></tr> <tr><td>offset</td> <td>Int</td> <td>no</td> <td>offset default 0</td></tr> <tr><td>limit</td> <td>Int</td> <td>no</td> <td>Page size default 1000 cannot exceed 1000</td></tr> <tr><td>recvWindow</td> <td>LONG</td> <td>no</td> <td>Execution window time, cannot be greater than 60000</td></tr> <tr><td>timestamp</td> <td>LONG</td> <td>yes</td> <td>current timestamp 1658748648396</td></tr></tbody></table> <p><strong>response</strong></p> <table><thead><tr><th>parameter name</th> <th>type</th> <th>remarks</th></tr></thead> <tbody><tr><td>address</td> <td>String</td> <td>address</td></tr> <tr><td>amount</td> <td>DECIMAL</td> <td>Withdrawal amount</td></tr> <tr><td>applyTime</td> <td>Date</td> <td>Withdrawal time</td></tr> <tr><td>coin</td> <td>String</td> <td>coin name</td></tr> <tr><td>id</td> <td>String</td> <td>The id of the withdrawal</td></tr> <tr><td>withdrawOrderId</td> <td>String</td> <td>Custom ID, if there is none, this field will not be returned</td></tr> <tr><td>network</td> <td>String</td> <td>Withdrawal network</td></tr> <tr><td>transferType</td> <td>Int</td> <td>Transaction Type 1 = Withdrawal</td></tr> <tr><td>status</td> <td>Int</td> <td>Status Status 0-Confirmed-10-To be confirmed (under review) 20-Applied for block 30-Approved and passed 40-Approval failed 50-Exported 60-Preliminary confirmation of recharge (final confirmation becomes 0) 70-Approved failed and returned assets</td></tr> <tr><td>transactionFee</td> <td>String</td> <td>handling fee</td></tr> <tr><td>confirmNo</td> <td>Int</td> <td>Withdrawal confirmation times</td></tr> <tr><td>info</td> <td>String</td> <td>Reason for withdrawal failure</td></tr> <tr><td>txId</td> <td>String</td> <td>Withdrawal transaction id</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>[
+    {
+        &quot;address&quot;: &quot;0x94df8b352de7f46f64b01d3666bf6e936e44ce60&quot;,
+        &quot;amount&quot;: &quot;8.91000000&quot;,   
+        &quot;applyTime&quot;: &quot;2019-10-12 11:12:02&quot;,  
+        &quot;coin&quot;: &quot;USDT&quot;,
+        &quot;id&quot;: &quot;b6ae22b3aa844210a7041aee7589627c&quot;,  
+        &quot;withdrawOrderId&quot;: &quot;WITHDRAWtest123&quot;, 
+        &quot;network&quot;: &quot;ETH&quot;,
+        &quot;transferType&quot;: 0 
+        &quot;status&quot;: 6,
+        &quot;transactionFee&quot;: &quot;0.004&quot;, 
+        &quot;confirmNo&quot;:3,  
+        &quot;info&quot;: &quot;The address is not valid. Please confirm with the recipient&quot;, 
+        &quot;txId&quot;: &quot;0xb5ef8c13b968a406cc62a93a8bd80f9e9a906ef1b3fcf20a2e48573c17659268&quot;  
+    },
+    {
+        &quot;address&quot;: &quot;1FZdVHtiBqMrWdjPyRPULCUceZPJ2WLCsB&quot;,
+        &quot;amount&quot;: &quot;0.00150000&quot;,
+        &quot;applyTime&quot;: &quot;2019-09-24 12:43:45&quot;,
+        &quot;coin&quot;: &quot;BTC&quot;,
+        &quot;id&quot;: &quot;156ec387f49b41df8724fa744fa82719&quot;,
+        &quot;network&quot;: &quot;BTC&quot;,
+        &quot;transferType&quot;: 0, 
+        &quot;status&quot;: 6,
+        &quot;transactionFee&quot;: &quot;0.004&quot;,
+        &quot;confirmNo&quot;: 2,
+        &quot;info&quot;: &quot;&quot;,
+        &quot;txId&quot;: &quot;60fd9007ebfddc753455f95fafa808c4302c836e4d1eebc5a132c36c1d8ac354&quot;
+    }
+]
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/27/2022, 11:04:42 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/spot/market-interface.html" class="prev">
+        Market Interface
+      </a></span> <span class="next"><a href="/docs/spot/other-interface.html">
+        Other Interface
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.50c26c97.js" defer></script><script src="/docs/assets/js/3.4674da7f.js" defer></script><script src="/docs/assets/js/4.d8be1d73.js" defer></script><script src="/docs/assets/js/22.6f218616.js" defer></script>
+  </body>
+</html>

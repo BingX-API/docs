@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>交易接口 | BingX API Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="BingX交易所官方API文档,专业合约API文档,现货API文档">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7f806ca4.css" as="style"><link rel="preload" href="/docs/assets/js/app.50c26c97.js" as="script"><link rel="preload" href="/docs/assets/js/3.4674da7f.js" as="script"><link rel="preload" href="/docs/assets/js/4.d8be1d73.js" as="script"><link rel="preload" href="/docs/assets/js/67.cba93366.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.57ce178e.js"><link rel="prefetch" href="/docs/assets/js/11.57197624.js"><link rel="prefetch" href="/docs/assets/js/12.8bfffffe.js"><link rel="prefetch" href="/docs/assets/js/13.75250926.js"><link rel="prefetch" href="/docs/assets/js/14.440c35a5.js"><link rel="prefetch" href="/docs/assets/js/15.625b7454.js"><link rel="prefetch" href="/docs/assets/js/16.8cc91b97.js"><link rel="prefetch" href="/docs/assets/js/17.74da58b6.js"><link rel="prefetch" href="/docs/assets/js/18.7bc42381.js"><link rel="prefetch" href="/docs/assets/js/19.d79677a0.js"><link rel="prefetch" href="/docs/assets/js/20.be762b53.js"><link rel="prefetch" href="/docs/assets/js/21.43bb088f.js"><link rel="prefetch" href="/docs/assets/js/22.6f218616.js"><link rel="prefetch" href="/docs/assets/js/23.4f72778d.js"><link rel="prefetch" href="/docs/assets/js/24.1ec2b096.js"><link rel="prefetch" href="/docs/assets/js/25.104e1b98.js"><link rel="prefetch" href="/docs/assets/js/26.b1deeecb.js"><link rel="prefetch" href="/docs/assets/js/27.bc0fae4f.js"><link rel="prefetch" href="/docs/assets/js/28.39316ae0.js"><link rel="prefetch" href="/docs/assets/js/29.e2ac4532.js"><link rel="prefetch" href="/docs/assets/js/30.a386a4bb.js"><link rel="prefetch" href="/docs/assets/js/31.67a3c6c4.js"><link rel="prefetch" href="/docs/assets/js/32.38bed9d2.js"><link rel="prefetch" href="/docs/assets/js/33.ef54acbb.js"><link rel="prefetch" href="/docs/assets/js/34.d6264377.js"><link rel="prefetch" href="/docs/assets/js/35.9df323e8.js"><link rel="prefetch" href="/docs/assets/js/36.11d16e91.js"><link rel="prefetch" href="/docs/assets/js/37.74364fe6.js"><link rel="prefetch" href="/docs/assets/js/38.22df5707.js"><link rel="prefetch" href="/docs/assets/js/39.ed41d5f5.js"><link rel="prefetch" href="/docs/assets/js/40.df09a175.js"><link rel="prefetch" href="/docs/assets/js/41.3d722cfd.js"><link rel="prefetch" href="/docs/assets/js/42.e6498bc4.js"><link rel="prefetch" href="/docs/assets/js/43.8058cbcb.js"><link rel="prefetch" href="/docs/assets/js/44.2d27972b.js"><link rel="prefetch" href="/docs/assets/js/45.9d308104.js"><link rel="prefetch" href="/docs/assets/js/46.ee311158.js"><link rel="prefetch" href="/docs/assets/js/47.0b1547c0.js"><link rel="prefetch" href="/docs/assets/js/48.52086a01.js"><link rel="prefetch" href="/docs/assets/js/49.bc9199e0.js"><link rel="prefetch" href="/docs/assets/js/5.69699430.js"><link rel="prefetch" href="/docs/assets/js/50.e2064275.js"><link rel="prefetch" href="/docs/assets/js/51.fd33636b.js"><link rel="prefetch" href="/docs/assets/js/52.046a04ab.js"><link rel="prefetch" href="/docs/assets/js/53.7a563a56.js"><link rel="prefetch" href="/docs/assets/js/54.5217b343.js"><link rel="prefetch" href="/docs/assets/js/55.3b33d010.js"><link rel="prefetch" href="/docs/assets/js/56.c01ede69.js"><link rel="prefetch" href="/docs/assets/js/57.e704f967.js"><link rel="prefetch" href="/docs/assets/js/58.a4412698.js"><link rel="prefetch" href="/docs/assets/js/59.8195ef9d.js"><link rel="prefetch" href="/docs/assets/js/6.e3c66b57.js"><link rel="prefetch" href="/docs/assets/js/60.b123c332.js"><link rel="prefetch" href="/docs/assets/js/61.4457e838.js"><link rel="prefetch" href="/docs/assets/js/62.75ce18e6.js"><link rel="prefetch" href="/docs/assets/js/63.e97745bc.js"><link rel="prefetch" href="/docs/assets/js/64.f89c8b22.js"><link rel="prefetch" href="/docs/assets/js/65.4202369e.js"><link rel="prefetch" href="/docs/assets/js/66.1d90cde4.js"><link rel="prefetch" href="/docs/assets/js/68.77830980.js"><link rel="prefetch" href="/docs/assets/js/69.66ebe0e3.js"><link rel="prefetch" href="/docs/assets/js/7.e9ff2992.js"><link rel="prefetch" href="/docs/assets/js/70.3db5baea.js"><link rel="prefetch" href="/docs/assets/js/71.f0f80cb9.js"><link rel="prefetch" href="/docs/assets/js/72.2a46fb47.js"><link rel="prefetch" href="/docs/assets/js/73.92b5a65a.js"><link rel="prefetch" href="/docs/assets/js/74.9fa565f3.js"><link rel="prefetch" href="/docs/assets/js/75.536ec68c.js"><link rel="prefetch" href="/docs/assets/js/76.eecc2383.js"><link rel="prefetch" href="/docs/assets/js/77.3fafd034.js"><link rel="prefetch" href="/docs/assets/js/78.9f0d2e1f.js"><link rel="prefetch" href="/docs/assets/js/8.db263e85.js"><link rel="prefetch" href="/docs/assets/js/9.124ab448.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.8f04fa7f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7f806ca4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/zh/" class="home-link router-link-active"><img src="/docs/logo.svg" alt="BingX API Docs" class="logo"></a> <div class="navs"><nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/zh/swap/" class="nav-link">
+  USDT本位专业合约
+</a></div><div class="nav-item"><a href="/docs/zh/spot/" class="nav-link router-link-active">
+  现货
+</a></div></nav></div> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/spot/trade-interface.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/spot/trade-interface.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh-hk/spot/trade-interface.html" class="nav-link">
+  繁体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/zh/swap/" class="nav-link">
+  USDT本位专业合约
+</a></div><div class="nav-item"><a href="/docs/zh/spot/" class="nav-link router-link-active">
+  现货
+</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>现货API文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/spot/basic-information.html" class="sidebar-link">基础信息</a></li><li><a href="/docs/zh/spot/authentication.html" class="sidebar-link">签名认证</a></li><li><a href="/docs/zh/spot/trade-interface.html" aria-current="page" class="active sidebar-link">交易接口</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh/spot/trade-interface.html#下单" class="sidebar-link">下单</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/trade-interface.html#撤单" class="sidebar-link">撤单</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/trade-interface.html#查询订单" class="sidebar-link">查询订单</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/trade-interface.html#查询委托订单列表" class="sidebar-link">查询委托订单列表</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/trade-interface.html#查询历史订单列表" class="sidebar-link">查询历史订单列表</a></li><li class="sidebar-sub-header"><a href="/docs/zh/spot/trade-interface.html#查询资产" class="sidebar-link">查询资产</a></li></ul></li><li><a href="/docs/zh/spot/market-interface.html" class="sidebar-link">行情接口</a></li><li><a href="/docs/zh/spot/user-interface.html" class="sidebar-link">用户划转和充值和提币接口</a></li><li><a href="/docs/zh/spot/other-interface.html" class="sidebar-link">其他接口</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>现货Socket文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh/spot/socket.html" class="sidebar-link">Websocket 介绍</a></li><li><a href="/docs/zh/spot/socket-market.html" class="sidebar-link">Websocket 行情推送</a></li><li><a href="/docs/zh/spot/socket-account.html" class="sidebar-link">Websocket 账户信息推送</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="交易接口"><a href="#交易接口" class="header-anchor">#</a> 交易接口</h1> <h2 id="下单"><a href="#下单" class="header-anchor">#</a> 下单</h2> <p><strong>接口</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    POST /openApi/spot/v1/trade/order
+</code></pre></div><p><strong>参数</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>是否必填</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>是</td> <td>交易品种, 例如: BTC-USDT, 请使用大写字母</td></tr> <tr><td>side</td> <td>string</td> <td>是</td> <td>交易类型, BUY买 SELL卖</td></tr> <tr><td>type</td> <td>string</td> <td>是</td> <td>订单类型, MARKET市价 LIMIT限价</td></tr> <tr><td>timeInForce</td> <td>string</td> <td>否</td> <td>IOC, POC</td></tr> <tr><td>quantity</td> <td>float64</td> <td>否</td> <td>下单数量, 例如: 0.1BTC</td></tr> <tr><td>quoteOrderQty</td> <td>float64</td> <td>否</td> <td>下单金额, 例如: 100USDT</td></tr> <tr><td>price</td> <td>float64</td> <td>否</td> <td>委托价格, 例如: 10000USDT</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>否</td> <td>请求有效时间空窗值, 单位:毫秒</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>是</td> <td>请求时间戳, 单位:毫秒</td></tr></tbody></table> <p><strong>注意</strong></p> <ul><li>限价单必须传<code>price</code>参数。</li> <li>限价单必须传<code>quantity</code>或<code>quoteOrderQty</code>其中一个，当两个参数同时传递时，服务端优先使用参数<code>quantity</code>。</li> <li>市价买单必须传<code>quoteOrderQty</code>参数。</li> <li>市价卖单必须传<code>quantity</code>参数。</li> <li>接口创建的订单在APP和Web页面不会显示。</li></ul> <p><strong>响应</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>交易品种</td></tr> <tr><td>orderId</td> <td>int64</td> <td>订单号</td></tr> <tr><td>transactTime</td> <td>int64</td> <td>交易时间戳</td></tr> <tr><td>price</td> <td>string</td> <td>委托价格</td></tr> <tr><td>origQty</td> <td>string</td> <td>下单数量</td></tr> <tr><td>executedQty</td> <td>string</td> <td>成交数量</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>成交额</td></tr> <tr><td>status</td> <td>string</td> <td>订单状态, NEW新订单 PENDING委托中 PARTIALLY_FILLED部分成交 FILLED完全成交 CANCELED已撤销 FAILED失败</td></tr> <tr><td>type</td> <td>string</td> <td>订单类型, MARKET市价 LIMIT限价</td></tr> <tr><td>side</td> <td>string</td> <td>交易类型, BUY买 SELL卖</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+        &quot;orderId&quot;: 1514090846268424192,
+        &quot;transactTime&quot;: 1649822362855,
+        &quot;price&quot;: &quot;0.5&quot;,
+        &quot;origQty&quot;: &quot;10&quot;,
+        &quot;executedQty&quot;: &quot;0&quot;,
+        &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+        &quot;status&quot;: &quot;PENDING&quot;,
+        &quot;type&quot;: &quot;LIMIT&quot;,
+        &quot;side&quot;: &quot;BUY&quot;
+    }
+}
+</code></pre></div><h2 id="撤单"><a href="#撤单" class="header-anchor">#</a> 撤单</h2> <p><strong>接口</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    POST /openApi/spot/v1/trade/cancel
+</code></pre></div><p><strong>参数</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>是否必填</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>是</td> <td>交易品种, 例如: BTC-USDT, 请使用大写字母</td></tr> <tr><td>orderId</td> <td>int64</td> <td>是</td> <td>订单id</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>否</td> <td>请求有效时间空窗值, 单位:毫秒</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>是</td> <td>请求时间戳, 单位:毫秒</td></tr></tbody></table> <p><strong>响应</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>交易品种</td></tr> <tr><td>orderId</td> <td>int64</td> <td>订单号</td></tr> <tr><td>price</td> <td>string</td> <td>委托价格</td></tr> <tr><td>origQty</td> <td>string</td> <td>下单数量</td></tr> <tr><td>executedQty</td> <td>string</td> <td>成交数量</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>成交额</td></tr> <tr><td>status</td> <td>string</td> <td>订单状态, NEW新订单 PENDING委托中 PARTIALLY_FILLED部分成交 FILLED完全成交 CANCELED已撤销 FAILED失败</td></tr> <tr><td>type</td> <td>string</td> <td>订单类型, MARKET市价 LIMIT限价</td></tr> <tr><td>side</td> <td>string</td> <td>交易类型, BUY买 SELL卖</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+        &quot;orderId&quot;: 1514090846268424192,
+        &quot;price&quot;: &quot;0.5&quot;,
+        &quot;origQty&quot;: &quot;10&quot;,
+        &quot;executedQty&quot;: &quot;0&quot;,
+        &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+        &quot;status&quot;: &quot;CANCELED&quot;,
+        &quot;type&quot;: &quot;LIMIT&quot;,
+        &quot;side&quot;: &quot;BUY&quot;
+    }
+}
+</code></pre></div><h2 id="查询订单"><a href="#查询订单" class="header-anchor">#</a> 查询订单</h2> <p><strong>接口</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/trade/query
+</code></pre></div><p><strong>参数</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>是否必填</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>是</td> <td>交易品种, 例如: BTC-USDT, 请使用大写字母</td></tr> <tr><td>orderId</td> <td>int64</td> <td>是</td> <td>订单id</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>否</td> <td>请求有效时间空窗值, 单位:毫秒</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>是</td> <td>请求时间戳, 单位:毫秒</td></tr></tbody></table> <p><strong>响应</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>交易品种</td></tr> <tr><td>orderId</td> <td>int64</td> <td>订单号</td></tr> <tr><td>price</td> <td>string</td> <td>委托价格</td></tr> <tr><td>origQty</td> <td>string</td> <td>下单数量</td></tr> <tr><td>executedQty</td> <td>string</td> <td>成交数量</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>成交额</td></tr> <tr><td>status</td> <td>string</td> <td>订单状态, NEW新订单 PENDING委托中 PARTIALLY_FILLED部分成交 FILLED完全成交 CANCELED已撤销 FAILED失败</td></tr> <tr><td>type</td> <td>string</td> <td>订单类型, MARKET市价 LIMIT限价</td></tr> <tr><td>side</td> <td>string</td> <td>交易类型, BUY买 SELL卖</td></tr> <tr><td>time</td> <td>int64</td> <td>下单时间戳</td></tr> <tr><td>updateTime</td> <td>int64</td> <td>更新时间戳</td></tr> <tr><td>origQuoteOrderQty</td> <td>string</td> <td>下单金额</td></tr> <tr><td>fee</td> <td>string</td> <td>手续费</td></tr> <tr><td>feeAsset</td> <td>string</td> <td>手续费资产类型</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+        &quot;orderId&quot;: 1514087361158316032,
+        &quot;price&quot;: &quot;0.5&quot;,
+        &quot;origQty&quot;: &quot;10&quot;,
+        &quot;executedQty&quot;: &quot;0&quot;,
+        &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+        &quot;status&quot;: &quot;CANCELED&quot;,
+        &quot;type&quot;: &quot;LIMIT&quot;,
+        &quot;side&quot;: &quot;BUY&quot;,
+        &quot;time&quot;: 1649821532000,
+        &quot;updateTime&quot;: 1649821543000,
+        &quot;origQuoteOrderQty&quot;: &quot;0&quot;,
+        &quot;fee&quot;: &quot;0&quot;,
+        &quot;feeAsset&quot;: &quot;XRP&quot;
+    }
+}
+</code></pre></div><h2 id="查询委托订单列表"><a href="#查询委托订单列表" class="header-anchor">#</a> 查询委托订单列表</h2> <p><strong>接口</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/trade/openOrders
+</code></pre></div><p><strong>参数</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>是否必填</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>是</td> <td>交易品种, 例如: BTC-USDT, 请使用大写字母</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>否</td> <td>请求有效时间空窗值, 单位:毫秒</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>是</td> <td>请求时间戳, 单位:毫秒</td></tr></tbody></table> <p><strong>响应</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>orders</td> <td>array</td> <td>订单列表,最大长度为2000, 订单字段参考下表</td></tr></tbody></table> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>交易品种</td></tr> <tr><td>orderId</td> <td>int64</td> <td>订单号</td></tr> <tr><td>price</td> <td>string</td> <td>委托价格</td></tr> <tr><td>origQty</td> <td>string</td> <td>下单数量</td></tr> <tr><td>executedQty</td> <td>string</td> <td>成交数量</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>成交额</td></tr> <tr><td>status</td> <td>string</td> <td>订单状态, NEW新订单 PENDING委托中 PARTIALLY_FILLED部分成交 FILLED完全成交 CANCELED已撤销 FAILED失败</td></tr> <tr><td>type</td> <td>string</td> <td>订单类型, MARKET市价 LIMIT限价</td></tr> <tr><td>side</td> <td>string</td> <td>交易类型, BUY买 SELL卖</td></tr> <tr><td>time</td> <td>int64</td> <td>下单时间戳</td></tr> <tr><td>updateTime</td> <td>int64</td> <td>更新时间戳</td></tr> <tr><td>origQuoteOrderQty</td> <td>string</td> <td>下单金额</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;orders&quot;: [
+            {
+                &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+                &quot;orderId&quot;: 1514073325788200960,
+                &quot;price&quot;: &quot;0.5&quot;,
+                &quot;origQty&quot;: &quot;20&quot;,
+                &quot;executedQty&quot;: &quot;0&quot;,
+                &quot;cummulativeQuoteQty&quot;: &quot;0&quot;,
+                &quot;status&quot;: &quot;PENDING&quot;,
+                &quot;type&quot;: &quot;LIMIT&quot;,
+                &quot;side&quot;: &quot;BUY&quot;,
+                &quot;time&quot;: 1649818185647,
+                &quot;updateTime&quot;: 1649818185647,
+                &quot;origQuoteOrderQty&quot;: &quot;0&quot;
+            }
+        ]
+    }
+}
+</code></pre></div><h2 id="查询历史订单列表"><a href="#查询历史订单列表" class="header-anchor">#</a> 查询历史订单列表</h2> <p><strong>接口</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/trade/historyOrders
+</code></pre></div><p><strong>参数</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>是否必填</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>是</td> <td>交易品种, 例如: BTC-USDT, 请使用大写字母</td></tr> <tr><td>orderId</td> <td>int64</td> <td>否</td> <td></td></tr> <tr><td>startTime</td> <td>int64</td> <td>否</td> <td>开始时间戳, 单位:毫秒</td></tr> <tr><td>endTime</td> <td>int64</td> <td>否</td> <td>结束时间戳, 单位:毫秒</td></tr> <tr><td>pageIndex</td> <td>int64</td> <td>是</td> <td>分页页码,必须大于0</td></tr> <tr><td>pageSize</td> <td>int64</td> <td>是</td> <td>分页数量,必须大于0,最大值为100</td></tr> <tr><td>recvWindow</td> <td>int64</td> <td>否</td> <td>请求有效时间空窗值, 单位:毫秒</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>是</td> <td>请求时间戳, 单位:毫秒</td></tr></tbody></table> <p><strong>注意</strong></p> <ul><li>如设置 orderId , 订单将 &gt;= orderId。否则将返回最新订单。</li> <li>如果设置 startTime 和 endTime, orderId 就不需要设置。</li></ul> <p><strong>响应</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>orders</td> <td>array</td> <td>订单列表, 订单字段参考下表</td></tr></tbody></table> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>交易品种</td></tr> <tr><td>orderId</td> <td>int64</td> <td>订单号</td></tr> <tr><td>price</td> <td>string</td> <td>委托价格</td></tr> <tr><td>origQty</td> <td>string</td> <td>下单数量</td></tr> <tr><td>executedQty</td> <td>string</td> <td>成交数量</td></tr> <tr><td>cummulativeQuoteQty</td> <td>string</td> <td>成交额</td></tr> <tr><td>status</td> <td>string</td> <td>订单状态, NEW新订单 PENDING委托中 PARTIALLY_FILLED部分成交 FILLED完全成交 CANCELED已撤销 FAILED失败</td></tr> <tr><td>type</td> <td>string</td> <td>订单类型, MARKET市价 LIMIT限价</td></tr> <tr><td>side</td> <td>string</td> <td>交易类型, BUY买 SELL卖</td></tr> <tr><td>time</td> <td>int64</td> <td>下单时间戳</td></tr> <tr><td>updateTime</td> <td>int64</td> <td>更新时间戳</td></tr> <tr><td>origQuoteOrderQty</td> <td>string</td> <td>下单金额</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;data&quot;: {
+        &quot;orders&quot;: [
+            {
+                &quot;symbol&quot;: &quot;XRP-USDT&quot;,
+                &quot;orderId&quot;: 1502203895118561280,
+                &quot;price&quot;: &quot;0.74011&quot;,
+                &quot;origQty&quot;: &quot;0&quot;,
+                &quot;executedQty&quot;: &quot;13.5&quot;,
+                &quot;cummulativeQuoteQty&quot;: &quot;9.9927&quot;,
+                &quot;status&quot;: &quot;FILLED&quot;,
+                &quot;type&quot;: &quot;MARKET&quot;,
+                &quot;side&quot;: &quot;BUY&quot;,
+                &quot;time&quot;: 1646988293000,
+                &quot;updateTime&quot;: 1646988293000,
+                &quot;origQuoteOrderQty&quot;: &quot;10&quot;
+            }
+        ]
+    }
+}
+</code></pre></div><h2 id="查询资产"><a href="#查询资产" class="header-anchor">#</a> 查询资产</h2> <p><strong>接口</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/account/balance
+</code></pre></div><p><strong>参数</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>是否必填</th> <th>备注</th></tr></thead> <tbody><tr><td>recvWindow</td> <td>int64</td> <td>否</td> <td>请求有效时间空窗值, 单位:毫秒</td></tr> <tr><td>timestamp</td> <td>int64</td> <td>是</td> <td>请求时间戳, 单位:毫秒</td></tr></tbody></table> <p><strong>响应</strong></p> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>balances</td> <td>array</td> <td>资产列表, 元素字段参考下表</td></tr></tbody></table> <table><thead><tr><th>参数名</th> <th>类型</th> <th>备注</th></tr></thead> <tbody><tr><td>asset</td> <td>string</td> <td>资产名</td></tr> <tr><td>free</td> <td>string</td> <td>可用资金</td></tr> <tr><td>locked</td> <td>string</td> <td>冻结资金</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;msg&quot;: &quot;&quot;,
+    &quot;ttl&quot;: 1,
+    &quot;data&quot;: {
+        &quot;balances&quot;: [
+            {
+                &quot;asset&quot;: &quot;USDT&quot;,
+                &quot;free&quot;: &quot;16.73971130673954&quot;,
+                &quot;locked&quot;: &quot;0&quot;
+            }
+        ]
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022/6/10 下午5:53:34</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/zh/spot/authentication.html" class="prev">
+        签名认证
+      </a></span> <span class="next"><a href="/docs/zh/spot/market-interface.html">
+        行情接口
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.50c26c97.js" defer></script><script src="/docs/assets/js/3.4674da7f.js" defer></script><script src="/docs/assets/js/4.d8be1d73.js" defer></script><script src="/docs/assets/js/67.cba93366.js" defer></script>
+  </body>
+</html>

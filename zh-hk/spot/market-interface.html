@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>行情介面 | BingX API Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="BingX交易所官方API文档,专业合约API文档,现货API文档">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7f806ca4.css" as="style"><link rel="preload" href="/docs/assets/js/app.50c26c97.js" as="script"><link rel="preload" href="/docs/assets/js/3.4674da7f.js" as="script"><link rel="preload" href="/docs/assets/js/4.d8be1d73.js" as="script"><link rel="preload" href="/docs/assets/js/40.df09a175.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.57ce178e.js"><link rel="prefetch" href="/docs/assets/js/11.57197624.js"><link rel="prefetch" href="/docs/assets/js/12.8bfffffe.js"><link rel="prefetch" href="/docs/assets/js/13.75250926.js"><link rel="prefetch" href="/docs/assets/js/14.440c35a5.js"><link rel="prefetch" href="/docs/assets/js/15.625b7454.js"><link rel="prefetch" href="/docs/assets/js/16.8cc91b97.js"><link rel="prefetch" href="/docs/assets/js/17.74da58b6.js"><link rel="prefetch" href="/docs/assets/js/18.7bc42381.js"><link rel="prefetch" href="/docs/assets/js/19.d79677a0.js"><link rel="prefetch" href="/docs/assets/js/20.be762b53.js"><link rel="prefetch" href="/docs/assets/js/21.43bb088f.js"><link rel="prefetch" href="/docs/assets/js/22.6f218616.js"><link rel="prefetch" href="/docs/assets/js/23.4f72778d.js"><link rel="prefetch" href="/docs/assets/js/24.1ec2b096.js"><link rel="prefetch" href="/docs/assets/js/25.104e1b98.js"><link rel="prefetch" href="/docs/assets/js/26.b1deeecb.js"><link rel="prefetch" href="/docs/assets/js/27.bc0fae4f.js"><link rel="prefetch" href="/docs/assets/js/28.39316ae0.js"><link rel="prefetch" href="/docs/assets/js/29.e2ac4532.js"><link rel="prefetch" href="/docs/assets/js/30.a386a4bb.js"><link rel="prefetch" href="/docs/assets/js/31.67a3c6c4.js"><link rel="prefetch" href="/docs/assets/js/32.38bed9d2.js"><link rel="prefetch" href="/docs/assets/js/33.ef54acbb.js"><link rel="prefetch" href="/docs/assets/js/34.d6264377.js"><link rel="prefetch" href="/docs/assets/js/35.9df323e8.js"><link rel="prefetch" href="/docs/assets/js/36.11d16e91.js"><link rel="prefetch" href="/docs/assets/js/37.74364fe6.js"><link rel="prefetch" href="/docs/assets/js/38.22df5707.js"><link rel="prefetch" href="/docs/assets/js/39.ed41d5f5.js"><link rel="prefetch" href="/docs/assets/js/41.3d722cfd.js"><link rel="prefetch" href="/docs/assets/js/42.e6498bc4.js"><link rel="prefetch" href="/docs/assets/js/43.8058cbcb.js"><link rel="prefetch" href="/docs/assets/js/44.2d27972b.js"><link rel="prefetch" href="/docs/assets/js/45.9d308104.js"><link rel="prefetch" href="/docs/assets/js/46.ee311158.js"><link rel="prefetch" href="/docs/assets/js/47.0b1547c0.js"><link rel="prefetch" href="/docs/assets/js/48.52086a01.js"><link rel="prefetch" href="/docs/assets/js/49.bc9199e0.js"><link rel="prefetch" href="/docs/assets/js/5.69699430.js"><link rel="prefetch" href="/docs/assets/js/50.e2064275.js"><link rel="prefetch" href="/docs/assets/js/51.fd33636b.js"><link rel="prefetch" href="/docs/assets/js/52.046a04ab.js"><link rel="prefetch" href="/docs/assets/js/53.7a563a56.js"><link rel="prefetch" href="/docs/assets/js/54.5217b343.js"><link rel="prefetch" href="/docs/assets/js/55.3b33d010.js"><link rel="prefetch" href="/docs/assets/js/56.c01ede69.js"><link rel="prefetch" href="/docs/assets/js/57.e704f967.js"><link rel="prefetch" href="/docs/assets/js/58.a4412698.js"><link rel="prefetch" href="/docs/assets/js/59.8195ef9d.js"><link rel="prefetch" href="/docs/assets/js/6.e3c66b57.js"><link rel="prefetch" href="/docs/assets/js/60.b123c332.js"><link rel="prefetch" href="/docs/assets/js/61.4457e838.js"><link rel="prefetch" href="/docs/assets/js/62.75ce18e6.js"><link rel="prefetch" href="/docs/assets/js/63.e97745bc.js"><link rel="prefetch" href="/docs/assets/js/64.f89c8b22.js"><link rel="prefetch" href="/docs/assets/js/65.4202369e.js"><link rel="prefetch" href="/docs/assets/js/66.1d90cde4.js"><link rel="prefetch" href="/docs/assets/js/67.cba93366.js"><link rel="prefetch" href="/docs/assets/js/68.77830980.js"><link rel="prefetch" href="/docs/assets/js/69.66ebe0e3.js"><link rel="prefetch" href="/docs/assets/js/7.e9ff2992.js"><link rel="prefetch" href="/docs/assets/js/70.3db5baea.js"><link rel="prefetch" href="/docs/assets/js/71.f0f80cb9.js"><link rel="prefetch" href="/docs/assets/js/72.2a46fb47.js"><link rel="prefetch" href="/docs/assets/js/73.92b5a65a.js"><link rel="prefetch" href="/docs/assets/js/74.9fa565f3.js"><link rel="prefetch" href="/docs/assets/js/75.536ec68c.js"><link rel="prefetch" href="/docs/assets/js/76.eecc2383.js"><link rel="prefetch" href="/docs/assets/js/77.3fafd034.js"><link rel="prefetch" href="/docs/assets/js/78.9f0d2e1f.js"><link rel="prefetch" href="/docs/assets/js/8.db263e85.js"><link rel="prefetch" href="/docs/assets/js/9.124ab448.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.8f04fa7f.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7f806ca4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/zh-hk/" class="home-link router-link-active"><img src="/docs/logo.svg" alt="BingX API Docs" class="logo"></a> <div class="navs"><nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/zh-hk/swap/" class="nav-link">
+  USDT本位專業合約
+</a></div><div class="nav-item"><a href="/docs/zh-hk/spot/" class="nav-link router-link-active">
+  現貨
+</a></div></nav></div> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="选择语言" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="选择语言" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/spot/market-interface.html" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh/spot/market-interface.html" class="nav-link">
+  简体中文
+</a></li><li class="dropdown-item"><!----> <a href="/docs/zh-hk/spot/market-interface.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  繁体中文
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/zh-hk/swap/" class="nav-link">
+  USDT本位專業合約
+</a></div><div class="nav-item"><a href="/docs/zh-hk/spot/" class="nav-link router-link-active">
+  現貨
+</a></div></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>現貨API文檔</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh-hk/spot/basic-information.html" class="sidebar-link">基礎信息</a></li><li><a href="/docs/zh-hk/spot/authentication.html" class="sidebar-link">簽名認證</a></li><li><a href="/docs/zh-hk/spot/trade-interface.html" class="sidebar-link">交易介面</a></li><li><a href="/docs/zh-hk/spot/market-interface.html" aria-current="page" class="active sidebar-link">行情介面</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/zh-hk/spot/market-interface.html#查詢交易品種" class="sidebar-link">查詢交易品種</a></li><li class="sidebar-sub-header"><a href="/docs/zh-hk/spot/market-interface.html#查詢成交記錄" class="sidebar-link">查詢成交記錄</a></li><li class="sidebar-sub-header"><a href="/docs/zh-hk/spot/market-interface.html#查詢深度信息" class="sidebar-link">查詢深度信息</a></li></ul></li><li><a href="/docs/zh-hk/spot/user-interface.html" class="sidebar-link">用戶劃轉和充值和提幣介面</a></li><li><a href="/docs/zh-hk/spot/other-interface.html" class="sidebar-link">其他介面</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>現貨Socket文檔</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/zh-hk/spot/socket.html" class="sidebar-link">Websocket 介紹</a></li><li><a href="/docs/zh-hk/spot/socket-market.html" class="sidebar-link">Websocket 行情推送</a></li><li><a href="/docs/zh-hk/spot/socket-account.html" class="sidebar-link">Websocket 賬戶信息推送</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="行情介面"><a href="#行情介面" class="header-anchor">#</a> 行情介面</h1> <h2 id="查詢交易品種"><a href="#查詢交易品種" class="header-anchor">#</a> 查詢交易品種</h2> <p><strong>介面</strong></p> <div class="language- extra-class"><pre class="language-text"><code>    GET /openApi/spot/v1/common/symbols
+</code></pre></div><p><strong>參數</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>是否必填</th> <th>備註</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>否</td> <td>交易品種, 例如: BTC-USDT, 請使用大寫字母</td></tr></tbody></table> <p><strong>響應</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>symbols</td> <td>array</td> <td>品種信息列表, 元素參考下表</td></tr></tbody></table> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>交易品種</td></tr> <tr><td>tickSize</td> <td>float64</td> <td>價格步長</td></tr> <tr><td>stepSize</td> <td>float64</td> <td>數量步長</td></tr> <tr><td>minQty</td> <td>float64</td> <td>最小交易數量</td></tr> <tr><td>maxQty</td> <td>float64</td> <td>最大交易數量</td></tr> <tr><td>minNotional</td> <td>float64</td> <td>最小交易金額</td></tr> <tr><td>maxNotional</td> <td>float64</td> <td>最大交易金額</td></tr> <tr><td>status</td> <td>int</td> <td>0下線, 1上線</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;:0,
+    &quot;msg&quot;:&quot;&quot;,
+    &quot;data&quot;:{
+        &quot;symbols&quot;:[
+            {
+                &quot;symbol&quot;:&quot;BTC-USDT&quot;,
+                &quot;tickSize&quot;: 0.01,
+                &quot;stepSize&quot;: 0.000001,
+                &quot;minQty&quot;: 0.00012,
+                &quot;maxQty&quot;: 1.24947,
+                &quot;minNotional&quot;: 6,
+                &quot;maxNotional&quot;: 50000,
+                &quot;status&quot;:1
+            }
+        ]
+    }
+}
+</code></pre></div><h2 id="查詢成交記錄"><a href="#查詢成交記錄" class="header-anchor">#</a> 查詢成交記錄</h2> <p><strong>介面</strong></p> <div class="language- extra-class"><pre class="language-text"><code>GET /openApi/spot/v1/market/trades
+</code></pre></div><p><strong>參數</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>是否必填</th> <th>備註</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>是</td> <td>交易品種, 例如: BTC-USDT, 請使用大寫字母</td></tr> <tr><td>limit</td> <td>int</td> <td>否</td> <td>默認100，最多100</td></tr></tbody></table> <p><strong>響應</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>id</td> <td>long</td> <td>交易id</td></tr> <tr><td>price</td> <td>float64</td> <td>價格</td></tr> <tr><td>qty</td> <td>float64</td> <td>數量</td></tr> <tr><td>time</td> <td>long</td> <td>時間</td></tr> <tr><td>isBuyerMaker</td> <td>boolean</td> <td>是否買方</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 43148253,
+            &quot;price&quot;: 25714.71,
+            &quot;qty&quot;: 1.674571,
+            &quot;time&quot;: 1655085975589,
+            &quot;buyerMaker&quot;: false
+        }
+    ]
+}
+</code></pre></div><h2 id="查詢深度信息"><a href="#查詢深度信息" class="header-anchor">#</a> 查詢深度信息</h2> <p><strong>介面</strong></p> <div class="language- extra-class"><pre class="language-text"><code>GET /openApi/spot/v1/market/depth
+</code></pre></div><p><strong>參數</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>是否必填</th> <th>備註</th></tr></thead> <tbody><tr><td>symbol</td> <td>string</td> <td>是</td> <td>交易品種, 例如: BTC-USDT, 請使用大寫字母</td></tr> <tr><td>limit</td> <td>int</td> <td>否</td> <td>默認20檔，最多100</td></tr></tbody></table> <p><strong>響應</strong></p> <table><thead><tr><th>參數名</th> <th>類型</th> <th>備註</th></tr></thead> <tbody><tr><td>bids</td> <td>array</td> <td>第一個元素價格，第二個元素數量</td></tr> <tr><td>asks</td> <td>array</td> <td>第一個元素價格，第二個元素數量</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;code&quot;: 0,
+    &quot;data&quot;: {
+        &quot;bids&quot;: [
+            [
+                &quot;25770.20&quot;,
+                &quot;0.027944&quot;
+            ]
+        ],
+        &quot;asks&quot;: [
+            [
+                &quot;25774.59&quot;,
+                &quot;0.681418&quot;
+            ]
+        ]
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">13/6/2022 下午2:41:12</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/zh-hk/spot/trade-interface.html" class="prev">
+        交易介面
+      </a></span> <span class="next"><a href="/docs/zh-hk/spot/user-interface.html">
+        用戶劃轉和充值和提幣介面
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.50c26c97.js" defer></script><script src="/docs/assets/js/3.4674da7f.js" defer></script><script src="/docs/assets/js/4.d8be1d73.js" defer></script><script src="/docs/assets/js/40.df09a175.js" defer></script>
+  </body>
+</html>
