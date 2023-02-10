@@ -6,3 +6,5 @@
 [Standard Contract API Reference](https://bingx-api.github.io/docs/standard/)    
 
 [Spot API Reference](https://bingx-api.github.io/docs/spot/) 
+
+[Account & Wallet](https://bingx-api.github.io/docs/common/)
